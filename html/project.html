@@ -11,10 +11,10 @@
     <!-- navbar -->
     <div class = "navbar">
         <ul>
-            <li><a href="/index.html"><img src="/assets/images/Home.svg"></a></li>
-            <li id="active"><a href="project.html"><img src="/assets/images/Projects-Purple.svg"></a></li>
-            <li><a href="blog.html"><img src="/assets/images/Blog.svg"></a></li>
-            <li><a href="contact.html"><img src="/assets/images/Connect.svg"></a></li>
+            <li><a href="/index.html"><img src="/assets/images/Home.svg" title="Home"></a></li>
+            <li id="active"><a href="project.html" title="Projects"><img src="/assets/images/Projects-Purple.svg"></a></li>
+            <li><a href="blog.html" title="Blog"><img src="/assets/images/Blog.svg"></a></li>
+            <li><a href="contact.html" title="Connect"><img src="/assets/images/Connect.svg"></a></li>
         </ul>
     </div>
     
@@ -78,14 +78,6 @@
                 <img src="/assets/images/Icon-MovieRec.svg" alt="">
                 <h2>Movie Recommendation Software</h2>
             </div>
-            <div class="pane-project" id="earthquake">
-                <img src="/assets/images/Icon-Earthquake.svg" alt="">
-                <h2>Earthquake Prediction (Future Project)</h2>
-            </div>
-            <div class="pane-project" id="musicrec">
-                <img src="/assets/images/Icon-MusicRec.svg" alt="">
-                <h2>Music Recommendation Software (Future Project)</h2>
-            </div>
             <div class="pane-project" id="website">
                 <img src="/assets/images/Icon-Website.svg" alt="">
                 <h2>Website Development</h2>
@@ -98,14 +90,22 @@
                 <img src="/assets/images/Icon-Website.svg" alt="">
                 <h2>Robotics</h2>
             </div>
+            <div class="pane-project" id="earthquake">
+                <img src="/assets/images/Icon-Earthquake.svg" alt="">
+                <h2>Earthquake Prediction (Future Project)</h2>
+            </div>
+            <div class="pane-project" id="musicrec">
+                <img src="/assets/images/Icon-MusicRec.svg" alt="">
+                <h2>Music Recommendation Software (Future Project)</h2>
+            </div>
         </div>
     </div>
     
     <!-- project detail -->
     <div class="project-detail" id="project-detail">
         <div class="nav-buttons">
-            <button id="back">Back</button>
-            <button id="next">Next</button>
+            <button id="back" title="Press Left Arrow Key" onclick="back()">Back</button>
+            <button id="next" title="Press Right Arrow Key" onclick="next()">Next</button>
         </div>
         <img src="/assets/images/Main-Cynthia.svg" alt="" id="main-image">
         <h1 id = "title">Cynthia</h1>

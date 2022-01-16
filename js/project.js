@@ -161,24 +161,7 @@ const projects = [
         content2: "You can find the source code for this project <a href = 'https://github.com/YashvardhanG/Movie-Recommendation'>Here</a>."
     },
 
-    {
-        id: "earthquake",
-        image: "/assets/images/Main-Earthquake.svg",
-        title: "Earthquake Prediction Algorithm",
-        byline: "Future Project | Python & R-Analysis",
-        heading1: "About",
-        content1: "A Machine learning project using Python and R-Analysis. It will be provided with a dataset of recent Earthquakes in the past few years. This will then try to find relevant similarities and possibly predict any future earthquakes. Although this project is wildly far-fetched, the slight possibility of predicting a natural phenomenon according to a prediction algorithm is intriguing. Incase you are up for collaborating on this project, feel free to connect with me.",
-    },
-
-    {
-        id: "musicrec",
-        image: "/assets/images/Main-MusicRec.svg",
-        title: "Music Recommendation Software",
-        byline: "Future Project | Python & Tensorflow",
-        heading1: "About",
-        content1: "A Music Recommendation System built with a million song dataset. It provides the listener a list of 5 songs based on the song they are currently listening to. This would run an algorithm and find all similar songs by filtering it down to genre, mood, year, artists and more. <br><br>Further, this algorithm could be integrated with a UI based architecture to work as a Music application.",
-    },
-
+    
     {
         id: "website",
         image: "/assets/images/Main-Website.svg",
@@ -189,7 +172,7 @@ const projects = [
         heading2: "Websites",
         content2: "1. This Website (Portfolio): <a href = '/index.html'>Portfolio</a><br>2. Ed-Tech Platform: <a href = 'https://yashvardhang.github.io/Ed-Tech/'>Ed-Tech</a><br>3. Spiral Cosmos: <a href = 'www.spiralcosmos.com'>Website</a>"
     },
-
+    
     {
         id: "spiralcosmos",
         image: "/assets/images/Main-SpiralCosmos.svg",
@@ -200,7 +183,7 @@ const projects = [
         heading2: "Source Code",
         content2: "Cynthia is an Artificial Intelligent, personalized Computer Assistant. It works on two modes; Voice Command Recognition and Command-Line based text mode. Cynthia has a variety of features and, is much more than the conventional weather, memo assistant. It can control the entirety of your device, including your web browser, just with your voice. You can personalize this assistant to any extent by adding customized commands."
     },
-
+    
     {
         id: "robotics",
         image: "/assets/images/Main-Website.svg",
@@ -210,6 +193,24 @@ const projects = [
         content1: "Weather is an Artificial Intelligent, personalized Computer Assistant. It works on two modes; Voice Command Recognition and Command-Line based text mode. Cynthia has a variety of features and, is much more than the conventional weather, memo assistant. It can control the entirety of your device, including your web browser, just with your voice. You can personalize this assistant to any extent by adding customized commands.",
         heading2: "Source Code",
         content2: "Cynthia is an Artificial Intelligent, personalized Computer Assistant. It works on two modes; Voice Command Recognition and Command-Line based text mode. Cynthia has a variety of features and, is much more than the conventional weather, memo assistant. It can control the entirety of your device, including your web browser, just with your voice. You can personalize this assistant to any extent by adding customized commands."
+    },
+
+    {
+        id: "earthquake",
+        image: "/assets/images/Main-Earthquake.svg",
+        title: "Earthquake Prediction Algorithm",
+        byline: "Future Project | Python & R-Analysis",
+        heading1: "About",
+        content1: "A Machine learning project using Python and R-Analysis. It will be provided with a dataset of recent Earthquakes in the past few years. This will then try to find relevant similarities and possibly predict any future earthquakes. Although this project is wildly far-fetched, the slight possibility of predicting a natural phenomenon according to a prediction algorithm is intriguing. Incase you are up for collaborating on this project, feel free to connect with me.",
+    },
+    
+    {
+        id: "musicrec",
+        image: "/assets/images/Main-MusicRec.svg",
+        title: "Music Recommendation Software",
+        byline: "Future Project | Python & Tensorflow",
+        heading1: "About",
+        content1: "A Music Recommendation System built with a million song dataset. It provides the listener a list of 5 songs based on the song they are currently listening to. This would run an algorithm and find all similar songs by filtering it down to genre, mood, year, artists and more. <br><br>Further, this algorithm could be integrated with a UI based architecture to work as a Music application.",
     }
 ]
 
@@ -223,9 +224,6 @@ function get()
     {     
         document.getElementById(projects[key].id).addEventListener("click", function() {details(projects[key].id); bg(projects[key].id)}, false);       
     }
-
-    document.getElementById("next").addEventListener("click", function() {next()}, false);
-    document.getElementById("back").addEventListener("click", function() {back()}, false);
 }
 
 function details(id = "cynthia") 
@@ -255,22 +253,23 @@ function details(id = "cynthia")
                 div.innerHTML += p;
             }    
 
-            // if(id == projects[0].id)
-            // {
-            //     document.getElementById("back").style.visibility = "hidden";
-            // }
-            
-            // else if (id == projects[length].id)
-            // {
-            //     document.getElementById("next").style.visibility = "hidden";
-            // }
-            
-            // else
-            // {
-            //     document.getElementById("next").style.visibility = "show";
-            //     document.getElementById("back").style.visibility = "show";
-            // }
         }
+    }
+
+    if (id == projects[0].id)
+    {
+        document.getElementById("back").style.visibility = "hidden";
+    }
+    
+    else if (id == projects[length].id)
+    {
+        document.getElementById("next").style.visibility = "hidden";
+    }
+
+    else
+    {
+        document.getElementById("next").style.visibility = "visible";
+        document.getElementById("back").style.visibility = "visible";
     }
 }
 
@@ -303,7 +302,8 @@ function next()
     } 
     
     bg(projects[index].id);
-    details(projects[index].id); 
+    details(projects[index].id);
+    document.getElementById(projects[index].id).scrollIntoView(); 
 }
 
 function back()
@@ -315,6 +315,7 @@ function back()
     
     bg(projects[index].id);
     details(projects[index].id); 
+    document.getElementById(projects[index].id).scrollIntoView(); 
 }
 
 window.addEventListener("load", bg("cynthia"));

@@ -44,9 +44,6 @@ body {
 	color: #263140;
 }
 
-/* TOOLTIP */
-
-
 /* NAVBAR */
 .navbar {
 	display: flex;
@@ -230,18 +227,6 @@ body {
 	font-weight: 100;
 }
 
-/* .pane-project#cynthia {
-	background-color: #8D24DF;
-	border: 5px solid white;
-	border-radius: 0px 20px 20px 20px;
-	outline-offset: 3px;
-	color: white;
-}
-
-.pane-project#cynthia h2 {
-	font-weight: 600;
-} */
- 
 /* SCROLLBAR */
 ::-webkit-scrollbar {
 	width: 3px;

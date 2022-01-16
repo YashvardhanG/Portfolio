@@ -41,9 +41,6 @@ function get()
     {     
         document.getElementById(blog[key].id).addEventListener("click", function() {details(blog[key].id); bg(blog[key].id)}, false);       
     }
-
-    document.getElementById("next").addEventListener("click", function() {next()}, false);
-    document.getElementById("back").addEventListener("click", function() {back()}, false);
 }
 
 function details(id = "apac") 
@@ -73,6 +70,22 @@ function details(id = "apac")
                 div.innerHTML += p;
             }    
         }
+    }
+
+    if (id == blog[0].id)
+    {
+        document.getElementById("back").style.visibility = "hidden";
+    }
+    
+    else if (id == blog[length].id)
+    {
+        document.getElementById("next").style.visibility = "hidden";
+    }
+
+    else
+    {
+        document.getElementById("next").style.visibility = "visible";
+        document.getElementById("back").style.visibility = "visible";
     }
 }
 
@@ -106,6 +119,7 @@ function next()
     
     bg(blog[index].id);
     details(blog[index].id); 
+    document.getElementById(projects[index].id).scrollIntoView(); 
 }
 
 function back()
@@ -117,6 +131,7 @@ function back()
     
     bg(blog[index].id);
     details(blog[index].id); 
+    document.getElementById(projects[index].id).scrollIntoView(); 
 }
 
 window.addEventListener("load", bg("apac"));
