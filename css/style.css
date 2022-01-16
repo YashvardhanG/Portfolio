@@ -1,0 +1,402 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+@font-face {
+	font-family: Poppins;
+	src: url('/assets/font/Poppins-Regular.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url('/assets/font/Poppins-Medium.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url('/assets/font/Poppins-Bold.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url('/assets/font/Poppins-Light.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+/* GENERAL */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #263140;
+}
+
+/* TOOLTIP */
+
+
+/* NAVBAR */
+.navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 8vw;
+	background: #8D24DF;
+	left: 0px;
+	top: 0px;
+}
+ 
+.navbar ul {
+	list-style-type: none;
+}
+
+.navbar li {
+	margin-top: 40px;
+	height: 80px;
+	width: 80px;
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+
+.navbar li#active {
+	background: #fff;
+	border-radius: 15px;
+	padding-top: 7px;
+}
+
+.navbar li:hover {
+	background: #692d97;
+	border-radius: 15px;
+	padding-top: 7px;	
+}
+
+.navbar img {
+	height: 45px;
+}
+
+/* HOME PAGE*/
+
+.home_left {
+	height: 100vh;
+	top: 0;
+	position: absolute;
+	width: 30vw;
+	margin-left: 12vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 10vh;
+}
+
+.home_left #DP{
+	height: 400px;
+	width: 400px;
+	justify-content: center;
+}
+
+.home_social{
+	align-self: center flex-end;
+	margin-top: 5vh;
+}
+
+.home_social ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: center;
+}
+
+.home_social img{
+	height: 60px;
+	margin-right: 30px;
+	transition: transform .8s ease-in-out;
+}
+
+.home_social img:hover {
+	transform: rotate(360deg);
+}
+
+.home_right {
+	height: 100vh;
+	top: 0;
+	position: absolute;
+	width: 53vw;
+	margin-left: 47vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.home_right h2 {
+	margin-top: 7vh;
+	font-weight: 600;
+	font-size: 40px;
+	display: inline;
+}
+
+.home_right h1 {
+	font-weight: 600;
+	font-size: 40px;
+	display: inline;	
+}
+
+.home_right p {
+	margin-top: 5vh;
+	font-weight: 300;
+	font-size: 15px;
+	display: inline;	
+	text-align: justify;
+	width: 45vw;
+}
+
+.home_right img {
+	height: 60px;
+	transition: transform .8s ease-in-out;
+}
+
+.home_right img:hover {
+	transform: rotate(360deg);
+}
+
+.home_right #top_right {
+	align-self: flex-end;
+	margin-top: 7vh;
+	margin-right: 7vh;
+}
+
+/* PROJECTS PAGE */
+
+.pane {
+	height: 100vh;
+	width: 30vw;
+	top: 0px;
+	position: absolute;
+	margin-left: 8vw;
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid #F9F8FF;
+	background-color: #fff;
+}
+
+.pane h1 {
+	font-weight: 900;
+	font-size: 30px;
+	margin-top: 10vh;
+	padding-bottom: 2vh;
+	margin-left: 1vw;	
+}
+
+.pane-project-container {
+	overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.pane-project {
+	background-color: #fff;
+	height: 12vh;
+	border-top: 1px solid #F9F8FF;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.pane-project:hover {
+	background-color:#F9F8FF;
+	cursor: pointer;
+}
+
+.pane img {
+	height: 60px;
+	margin-left: 1vw;
+}
+
+.pane h2 {
+	font-size: 18px;
+	margin-left: 1vw;
+	font-weight: 100;
+}
+
+/* .pane-project#cynthia {
+	background-color: #8D24DF;
+	border: 5px solid white;
+	border-radius: 0px 20px 20px 20px;
+	outline-offset: 3px;
+	color: white;
+}
+
+.pane-project#cynthia h2 {
+	font-weight: 600;
+} */
+ 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+	width: 3px;
+}
+
+::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #8D24DF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #8D24DF;
+}
+
+.project-detail {
+	height: 100vh;
+	top: 0px;
+	position: absolute;
+	width: 62vw;
+	margin-left: 38vw;
+	overflow-x: hidden;
+    overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-buttons {
+	margin-top: 6vh;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav-buttons button {
+	background-color: #8D24DF;
+	height: 35px;
+	width: 100px;
+	color: #fff;
+	font-family: Poppins;
+	font-weight: 600;
+	font-size: 15px;
+	border: none;
+	border-radius: 12px;
+}
+
+.nav-buttons button:hover {
+	background-color: #692d97;
+	cursor: pointer;
+}
+
+.project-detail img {
+	height: 200px;
+}
+
+.project-detail h1 {
+	align-self: center;
+	margin-top: 1vh;
+	font-weight: 900;
+}
+
+.project-detail h3 {
+	align-self: center;
+	font-weight: 300;
+	font-size: 18px;
+	padding-bottom: 6vh;
+}
+
+.project-detail h2 {
+	font-weight: 700;
+	font-size: 20px;
+	margin-left: 3vw;	
+}
+
+.project-detail p {
+	font-weight: 300;
+	font-size: 15px;
+	margin-left: 3vw;	
+	margin-right: 3vw;
+	text-align: justify;
+	margin-top: 1vh;
+	padding-bottom: 5vh;
+}
+
+/* CONTACT PAGE */
+.contact_left {
+	height: 100vh;
+	top: 0;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 47vw;
+	margin-left: 8vw;
+	padding-left: 8vw;
+	padding-top: 27vh;
+}
+
+.contact_left h1 {
+	padding-bottom: 1vh;
+}
+
+.contact_field {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 1vh;
+}
+
+.contact_field img{
+	height: 50px;
+	margin-top: 0.5vh;
+	transition: transform .8s ease-in-out;
+}
+
+.contact_field img:hover {
+	transform: rotate(360deg);
+}
+
+.contact_field h2 {
+	font-weight: 300;
+	margin-left: 1vw;
+	font-size: 20px;
+}
+
+.contact_right {
+	top: 0;
+	position: absolute;
+	width: 45vw;
+	margin-left: 55vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact_right #contact_top-right {
+	align-self: flex-end;
+	margin-top: 7vh;
+	margin-right: 7vh;
+}
+
+.contact_right img#button {
+	height: 55px;
+	transition: transform .8s ease-in-out;
+}
+
+.contact_right img#button:hover {
+	transform: rotate(360deg);
+}
+
+.contact_right img{
+	height: 450px;
+	align-self: flex-start;
+	margin-top: 3vh;
+}
