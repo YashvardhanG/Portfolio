@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/mode.js"></script>
     <title>Blog</title>
 </head>
-<body style="background-image: url(/assets/images/BG-Blog.svg); background-attachment: fixed; background-size: 100%;">
+<body style="background-image: url(/assets/images/BG-Blog.png); background-size: cover;">
     <!-- navbar -->
     <div class = "navbar">
         <ul>
-            <li><a href="/index.html" title="Home"><img src="/assets/images/Home.svg"></a></li>
-            <li><a href="project.html" title="Projects"><img src="/assets/images/Projects.svg"></a></li>
+            <li><a href="/index.html" title="Home"><img src="/assets/images/Home.svg" id="home"></a></li>
+            <li><a href="project.html" title="Projects"><img src="/assets/images/Projects.svg" id="projects"></a></li>
             <li id="active"><a href="blog.html" title="Blog"><img src="/assets/images/Blog-Purple.svg"></a></li>
-            <li><a href="contact.html" title="Connect"><img src="/assets/images/Connect.svg"></a></li>
+            <li><a href="contact.html" title="Connect"><img src="/assets/images/Connect.svg" id="connect"></a></li>
         </ul>
     </div>
 
     <!-- pane -->
-    <div class="pane">
+    <div class="pane" id="pane">
         <h1>Blog & Links</h1>
         <div class="pane-project-container">
             <div class="pane-project" id="apac">

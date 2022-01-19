@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/mode.js"></script>
     <title>Projects</title>
 </head>
-<body style="background-image: url(/assets/images/BG-Projects.png); background-attachment: fixed; background-size: 100% 100%;">
+<body style="background-image: url(/assets/images/BG-Projects.png); background-size: cover;">
     <!-- navbar -->
     <div class = "navbar">
         <ul>
-            <li><a href="/index.html"><img src="/assets/images/Home.svg" title="Home"></a></li>
-            <li id="active"><a href="project.html" title="Projects"><img src="/assets/images/Projects-Purple.svg"></a></li>
-            <li><a href="blog.html" title="Blog"><img src="/assets/images/Blog.svg"></a></li>
-            <li><a href="contact.html" title="Connect"><img src="/assets/images/Connect.svg"></a></li>
+            <li><a href="/index.html"><img src="/assets/images/Home.svg" title="Home" id="home"></a></li>
+            <li id="active"><a href="project.html" title="Projects"><img src="/assets/images/Projects-Purple.svg" id="projects"></a></li>
+            <li><a href="blog.html" title="Blog"><img src="/assets/images/Blog.svg" id="blog"></a></li>
+            <li><a href="contact.html" title="Connect"><img src="/assets/images/Connect.svg" id="connect"></a></li>
         </ul>
     </div>
     
     <!-- pane -->
-    <div class="pane">
+    <div class="pane" id="pane">
         <h1>Projects</h1>
-        <div class="pane-project-container">
+        <div class="pane-project-container" id="pane_container">
             <div class="pane-project" id="cynthia">
                 <img src="/assets/images/Icon-Cynthia.svg" alt="">
                 <h2>Cynthia</h2>

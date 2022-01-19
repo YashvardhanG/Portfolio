@@ -5,47 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>$(function(){$("#contact_left a").attr("target","_blank");});</script>
+    <script src="/js/mode.js"></script>
     <title>Contact</title>
 </head>
-<body style="background-image: url(/assets/images/BG-Contact.png); background-attachment: fixed; background-size: 100% 100%;">
+<body style="background-image: url(/assets/images/BG-Contact.png); background-size: cover;">
     <!-- navbar -->
     <div class = "navbar">
         <ul>
-            <li><a href="/index.html" title="Home"><img src="/assets/images/Home.svg"></a></li>
-            <li><a href="project.html" title="Projects"><img src="/assets/images/Projects.svg"></a></li>
-            <li><a href="blog.html" title="Blog"><img src="/assets/images/Blog.svg"></a></li>
+            <li><a href="/index.html" title="Home"><img src="/assets/images/Home.svg" id="home"></a></li>
+            <li><a href="project.html" title="Projects"><img src="/assets/images/Projects.svg" id="projects"></a></li>
+            <li><a href="blog.html" title="Blog"><img src="/assets/images/Blog.svg" id = "blog"></a></li>
             <li id="active"><a href="contact.html" title="Connect"><img src="/assets/images/Connect-Purple.svg"></a></li>
         </ul>
     </div>
 
     <!-- contact left  -->
-    <div class = "contact_left">
+    <div class = "contact_left" id="contact_left">
         <h1>Connect with me!&#129309;</h1>
         <div class="contact_field">
-            <a href="mailto:yashvardhang11@gmail.com" title="E-Mail"><img src="/assets/images/Icon-Mail.svg" alt=""></a>
+            <a href="mailto:yashvardhang11@gmail.com" title="E-Mail" target="_blank" rel="noreferrer noopener"><img src="/assets/images/Icon-Mail.svg" alt="" id="mail"></a>
             <h2>yashvardhang11@gmail.com</h2>
         </div>
         <div class="contact_field">
-            <a href="https://instagram.com/yashvardhang" title="Instagram"><img src="/assets/images/Icon-Insta.svg" alt=""></a>
+            <a href="https://instagram.com/yashvardhang" title="Instagram" target="_blank" rel="noreferrer noopener"><img src="/assets/images/Icon-Insta.svg" alt="" id="insta"></a>
             <h2>@yashvardhang</h2>
         </div>
         <div class="contact_field">
-            <a href="https://www.linkedin.com/in/yashvardhang11/" title="LinkedIn"><img src="/assets/images/LinkedIn.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/yashvardhang11/" title="LinkedIn" target="_blank" rel="noreferrer noopener"><img src="/assets/images/LinkedIn.png" alt="" id="linkedin"></a>
             <h2>@yashvardhang11</h2>
         </div>
         <div class="contact_field">
-            <a href="#" title="Discord"><img src="/assets/images/Icon-Discord.svg" alt=""></a>
+            <a href="https://discordapp.com/users/760883282475745340" title="Discord" target="_blank" rel="noreferrer noopener"><img src="/assets/images/Icon-Discord.svg" alt="" id="discord"></a>
             <h2>@Yashvardhan Gupta#0299</h2>
         </div>
         <div class="contact_field">
-            <a href="https://github.com/YashvardhanG" title="GitHub"><img src="/assets/images/GitHub.png" alt=""></a>
+            <a href="https://github.com/YashvardhanG" title="GitHub" target="_blank" rel="noreferrer noopener"><img src="/assets/images/GitHub.png" alt="" id="github"></a>
             <h2>@yashvardhang</h2>
         </div>
     </div>
 
     <!-- contact right image  -->
     <div class="contact_right">
-        <a href="index.html" id="contact_top-right" title="Home"><img src="/assets/images/Home-Icon.svg" alt="" id="button"></a>
+        <a href = "/index.html" id="contact_top-right" title="Home"><img src="/assets/images/Home-Icon.svg" alt="" id="button"></a>
         <img src="/assets/images/Contact-Image.png" alt="">
     </div>
 </body>

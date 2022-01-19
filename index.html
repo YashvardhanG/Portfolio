@@ -5,42 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>$(function(){$("#home_social a").attr("target","_blank");});</script>
+    <script src="/js/mode.js"></script>
     <title>Home</title>
 </head>
-<body style="background-image: url(/assets/images/BG-Home.png); background-attachment: fixed; background-size: 100% 100%;">
-    <!-- navbar -->
-    <div class = "navbar">
-        <ul>
-            <li id="active"><a href="index.html" title="Home"><img src="/assets/images/Home-Purple.svg"></a></li>
-            <li><a href="/html/project.html" title="Projects"><img src="/assets/images/Projects.svg"></a></li>
-            <li><a href="/html/blog.html" title="Blog"><img src="/assets/images/Blog.svg"></a></li>
-            <li><a href="/html/contact.html" title="Connect"><img src="/assets/images/Connect.svg"></a></li>
-        </ul>
-    </div>
-
-    <!-- home left  -->
-    <div class = "home_left">
-        <img src = "/assets/images/DP.png" id = "DP">
-        <div class = "home_social">
+<body style="background-image: url(/assets/images/BG-Home.png); background-size: cover;">
+    <div class="home-page">
+        <!-- navbar -->
+        <div class = "navbar">
             <ul>
-                <li><a href="https://www.linkedin.com/in/yashvardhang11/" title="LinkedIn"><img src="/assets/images/LinkedIn.png" alt=""></a></li>
-                <li><a href="https://github.com/YashvardhanG" title="GitHub"><img src="/assets/images/GitHub.png" alt=""></a></li>
-                <li><a href="https://dribbble.com/yashvardhang" title="Dribbble"><img src="/assets/images/Dribbble.png" alt=""></a></li>
+                <li id="active"><a href="index.html" title="Home"><img src="/assets/images/Home-Purple.svg" id="home"></a></li>
+                <li><a href="/html/project.html" title="Projects"><img src="/assets/images/Projects.svg" id = "projects"></a></li>
+                <li><a href="/html/blog.html" title="Blog"><img src="/assets/images/Blog.svg" id = "blog"></a></li>
+                <li><a href="/html/contact.html" title="Connect"><img src="/assets/images/Connect.svg" id = "connect"></a></li>
             </ul>
         </div>
-    </div>
-
-    <!-- home right  -->
-    <div class="home_right">
-        <a href="/html/project.html" id="top_right" title="Projects"><img src="/assets/images/Icon-Projects.svg" alt=""></a>
-        <h2>Hey There!&#128075;</h2>
-        <h1>I'm <strong style="font-size: 42px; font-weight: 1200;">Yashvardhan Gupta </strong><sup style="font-size: 15px; font-weight: 300;">(He/Him)</sup></h1>
-        <p>I’m a 19 year old Developer, Programmer, Designer, Guitarist and motivated, innovative colleague and leader with a strong will to learn, develop, and acquire new skills.
-            <br><br>
-            Currently involved with numerous projects including, Application Development, Web Development, Game Development, Graphic Designing and much more. I'll honoured if you could head on to the <strong>Projects page</strong>, and take a look at the various projects I've been working on and, share your reviews with me.  
-            <br><br>
-            I'm experienced in various programming languages including Python, C, C++, HTML, CSS, JS, SQL and more. I’m passionate about Computer Sciences and always eager to collaborate on new projects so, if you’re interested feel free to <strong>connect with me</strong>.
-        </p>
+    
+        <!-- home left  -->
+        <div class = "home_left">
+            <img src = "/assets/images/DP.png" id = "DP">
+            <div class = "home_social" id = "home_social">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/yashvardhang11/" title="LinkedIn"><img src="/assets/images/LinkedIn.png" alt="" id="LinkedIn"></a></li>
+                    <li><a href="https://github.com/YashvardhanG" title="GitHub"><img src="/assets/images/GitHub.png" alt="" id="GitHub"></a></li>
+                    <li><a href="https://dribbble.com/yashvardhang" title="Dribbble"><img src="/assets/images/Dribbble.png" alt="" id="Dribbble"></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- home right  -->
+        <div class="home_right">
+            <input type="checkbox" id="toggle" class="toggle--checkbox" onclick="change()"/>
+            <label for="toggle" class="toggle--label">  
+                <span class="toggle--label-background"></span>
+            </label>
+            <h2>Hey There!&#128075;</h2>
+            <h1>I'm <strong style="font-size: 42px; font-weight: 1200;">Yashvardhan Gupta </strong><sup style="font-size: 15px; font-weight: 300;">(He/Him)</sup></h1>
+            <p>I’m a 19 year old Developer, Programmer, Designer, Guitarist and motivated, innovative colleague and leader with a strong will to learn, develop, and acquire new skills.
+                <br><br>
+                Currently involved with numerous projects including, Application Development, Web Development, Game Development, Graphic Designing and much more. I'll honoured if you could head on to the <a href="/html/project.html">Projects page</a>, and take a look at the various projects I've been working on and, share your reviews with me.  
+                <br><br>
+                I'm experienced in various programming languages including Python, C, C++, HTML, CSS, JS, SQL and more. I’m passionate about Computer Sciences and always eager to collaborate on new projects so, if you’re interested feel free to <a href="/html/contact.html">Connect</a> with me.
+            </p>
+        </div>
     </div>
 </body>
 </html>

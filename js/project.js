@@ -31,7 +31,7 @@ const projects = [
         heading1: "About",
         content1: "Neural networks reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems in the fields of AI, machine learning, and deep learning. Artificial neural networks (ANNs) are comprised of a node layers, containing an input layer, one or more hidden layers, and an output layer. Each node, or artificial neuron, connects to another and has an associated weight and threshold. If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network.<br><br>A <b>Convolutional Neural Network</b> (CNN/ConvNet) is, a class of neural networks that specializes in processing data that has a grid-like topology, such as an image. A digital image is a binary representation of visual data. It contains a series of pixels arranged in a grid-like fashion that contains pixel values to denote how bright and what color each pixel should be.",
         heading2: "Functionality",
-        content2: "This project consists of various examples of Convolutional Neural Networks developed using Tensorflow which is integrated in the Python programming language. Since Tensorflow has been integrated in the Python Programming language, it requires some modules to operate. <br><br>You may explore the working of a Convolutional Neural Network <a href = 'You may explore the working of a Convolutional Neural Network Here.'>Here</a>.",
+        content2: "This project consists of various examples of Convolutional Neural Networks developed using Tensorflow which is integrated in the Python programming language. Since Tensorflow has been integrated in the Python Programming language, it requires some modules to operate. <br><br>You may explore the working of a Convolutional Neural Network <a href = 'https://towardsdatascience.com/convolutional-neural-network-17fb77e76c05#:~:text=Fully%20Connected%20Layer%20is%20simply,into%20the%20fully%20connected%20layer.'>Here</a>.",
         heading3: "Source Code",
         content3: "You may head on to <a href='https://github.com/YashvardhanG/CNN'>Source Code</a> and view all the CNN models developed."
     },
@@ -217,6 +217,7 @@ const projects = [
 
 let index = 0;
 let length = projects.length - 1;
+var toggle = localStorage.getItem("toggle");
 
 function get()
 {
@@ -252,7 +253,6 @@ function details(id = "cynthia")
                 div.innerHTML += h2;
                 div.innerHTML += p;
             }    
-
         }
     }
 
@@ -271,6 +271,17 @@ function details(id = "cynthia")
         document.getElementById("next").style.visibility = "visible";
         document.getElementById("back").style.visibility = "visible";
     }
+
+    var links = document.getElementById("project-detail").querySelectorAll('a');
+    for (var i = 0; i < links.length; i++)
+    {
+        var a = links[i];
+        if(a.hostname != location.hostname) 
+        {
+                a.rel = 'noopener';
+                a.target = '_blank';
+        }
+    }
 }
 
 function bg(id = "cynthia")
@@ -278,9 +289,19 @@ function bg(id = "cynthia")
     var select = `.pane-project#` + id +` {background-color: #8D24DF; border: 5px solid white; border-radius: 0px 20px 20px 20px; outline-offset: 3px; color: white;}
                   .pane-project#` + id + ` h2 {font-weight: 600;}`
 
-    for (const key in projects) {
-        var unselect = `.pane-project#` + projects[key].id +` {background-color: #fff; border: 0px solid white; border-radius: 0px 0px 0px 0px; outline-offset: 3px; color: #263140;}
-                        .pane-project#` + projects[key].id + ` h2 {font-weight: 100;}`
+    for (const key in projects) 
+    {
+        if(toggle == 1)
+        {
+            var unselect = `.pane-project#` + projects[key].id +` {background-color: #263140; border: 0px solid white; border-radius: 0px 0px 0px 0px; outline-offset: 3px; color: #263140;}
+                            .pane-project#` + projects[key].id + ` h2 {font-weight: 100;}`  
+        }
+
+        else
+        {
+            var unselect = `.pane-project#` + projects[key].id +` {background-color: #fff; border: 0px solid white; border-radius: 0px 0px 0px 0px; outline-offset: 3px; color: #263140;}
+                            .pane-project#` + projects[key].id + ` h2 {font-weight: 100;}`    
+        }
         
         var styleSheet = document.createElement("style")
         styleSheet.type = "text/css"

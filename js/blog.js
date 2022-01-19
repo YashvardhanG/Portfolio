@@ -34,6 +34,7 @@ const blog = [
 
 let index = 0;
 let length = blog.length - 1;
+var toggle = localStorage.getItem("toggle");
 
 function get()
 {
@@ -87,6 +88,17 @@ function details(id = "apac")
         document.getElementById("next").style.visibility = "visible";
         document.getElementById("back").style.visibility = "visible";
     }
+
+    var links = document.getElementById("project-detail").querySelectorAll('a');
+    for (var i = 0; i < links.length; i++)
+    {
+        var a = links[i];
+        if(a.hostname != location.hostname) 
+        {
+                a.rel = 'noopener';
+                a.target = '_blank';
+        }
+    }
 }
 
 function bg(id = "apac")
@@ -95,8 +107,17 @@ function bg(id = "apac")
                   .pane-project#` + id + ` h2 {font-weight: 600;}`
 
     for (const key in blog) {
-        var unselect = `.pane-project#` + blog[key].id +` {background-color: #fff; border: 0px solid white; border-radius: 0px 0px 0px 0px; outline-offset: 3px; color: #263140;}
-                        .pane-project#` + blog[key].id + ` h2 {font-weight: 100;}`
+        if(toggle == 1)
+        {
+            var unselect = `.pane-project#` + blog[key].id +` {background-color: #263140; border: 0px solid white; border-radius: 0px 0px 0px 0px; outline-offset: 3px; color: #263140;}
+                            .pane-project#` + blog[key].id + ` h2 {font-weight: 100;}`
+        }
+
+        else
+        {
+            var unselect = `.pane-project#` + blog[key].id +` {background-color: #fff; border: 0px solid white; border-radius: 0px 0px 0px 0px; outline-offset: 3px; color: #263140;}
+            .pane-project#` + blog[key].id + ` h2 {font-weight: 100;}`
+        }
         
         var styleSheet = document.createElement("style")
         styleSheet.type = "text/css"
