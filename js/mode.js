@@ -99,7 +99,8 @@ function dark(filename)
         document.body.style.backgroundSize = 'cover';
         document.body.style.backgroundImage = 'url(/assets/images/BG-Contact-Dark.png)';
         document.getElementById("home").src = "/assets/images/Home-Dark.svg";
-        document.getElementById("button").src = "/assets/images/Contact-Image-Dark.png";
+        document.getElementById("button").src = "/assets/images/Home-Icon-Dark.svg";
+        document.getElementById("contact").src = "/assets/images/Contact-Image-Dark.png";
         document.getElementById("blog").src = "/assets/images/Blog-Dark.svg";
         document.getElementById("projects").src = "/assets/images/Projects-Dark.svg";
         document.getElementById("active").style = "background: #263140;"
