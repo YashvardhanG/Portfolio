@@ -113,6 +113,10 @@ function dark(filename)
     else 
     {
         document.body.style.background = "#263140";
+        document.body.style.color = "#fff";
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundImage = 'url(./assets/images/BG-Home-Dark.png)';
+        document.getElementById("active").style = "background: #263140;"
     }
 }
 
