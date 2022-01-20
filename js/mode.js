@@ -124,3 +124,7 @@ function light()
 }
 
 window.addEventListener("load", get());
+window.addEventListener("keyup", function(e) {if (e.keyCode === 49){location.replace("/index.html");}});
+window.addEventListener("keyup", function(e) {if (e.keyCode === 50){location.replace("/html/project.html");}});
+window.addEventListener("keyup", function(e) {if (e.keyCode === 51){location.replace("/html/blog.html");}});
+window.addEventListener("keyup", function(e) {if (e.keyCode === 52){location.replace("/html/contact.html");}});
