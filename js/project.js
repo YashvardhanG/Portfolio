@@ -114,7 +114,7 @@ const projects = [
         heading1: "About",
         content1: "Three dimensional design and animation. Numerous projects including phone mockups, game graphics designing, backgrounds and more. 3D modelling was done using the <b>Blender</b> software. To know more about the software and use this tool, head on <a href = 'https://www.blender.org/'>here.</a>",
         heading2: "Designs",
-        content2: "The links to some of the my 3D design work has been given below:"
+        content2: "The links to some of the my 3D design work has been given below:<br><br><img src='/assets/images/Project-Images/3D-1.png'/>"
     },
 
     {
@@ -147,7 +147,7 @@ const projects = [
         heading1: "About",
         content1: "A set of documentaries and, specific purpose projects shot and then edited in softwares such as Sony Vegas Pro, DaVinci Resolve and After Effects. In order to make professional videos and general video edits, my recommendation will be: <a href = 'https://www.blackmagicdesign.com/in/products/davinciresolve/'>DaVinci Resolve</a>, which is an absolutely free video editing software.",
         heading2: "Video Projects",
-        content2: "#"
+        content2: "Some Video Projects are given below:<br><br><b>● 3D Design</b> - Blender | <b>App Prototype</b> - Figma | <b>Video Editing</b> - DaVinci Resolve<br><br><video width = '500' controls autoplay loop><source src='/assets/images/Project-Images/Video-1.mp4' type='video/mp4'></video>"
     },
 
     {
@@ -170,7 +170,7 @@ const projects = [
         heading1: "About",
         content1: "Developed and contributed in multiple projects concerned WebDev. I usually follow the conventional HTML/CSS/JS approach to develop websites. The links to some of the websites have been given below.",
         heading2: "Websites",
-        content2: "1. This Website (Portfolio): <a href = '/index.html'>Portfolio</a><br>2. Ed-Tech Platform: <a href = 'https://yashvardhang.github.io/Ed-Tech/'>Ed-Tech</a><br>3. Spiral Cosmos: <a href = 'www.spiralcosmos.com'>Website</a>"
+        content2: "● This Website (Portfolio): <a href = '/index.html'>Portfolio</a><br>● Ed-Tech Platform: <a href = 'https://yashvardhang.github.io/Ed-Tech/'>Ed-Tech</a><br>● Spiral Cosmos: <a href = 'www.spiralcosmos.com'>Website</a>"
     },
     
     {
@@ -179,20 +179,20 @@ const projects = [
         title: "Spiral Cosmos",
         byline: "Open Source Community",
         heading1: "About",
-        content1: "Weather is an Artificial Intelligent, personalized Computer Assistant. It works on two modes; Voice Command Recognition and Command-Line based text mode. Cynthia has a variety of features and, is much more than the conventional weather, memo assistant. It can control the entirety of your device, including your web browser, just with your voice. You can personalize this assistant to any extent by adding customized commands.",
-        heading2: "Source Code",
-        content2: "Cynthia is an Artificial Intelligent, personalized Computer Assistant. It works on two modes; Voice Command Recognition and Command-Line based text mode. Cynthia has a variety of features and, is much more than the conventional weather, memo assistant. It can control the entirety of your device, including your web browser, just with your voice. You can personalize this assistant to any extent by adding customized commands."
+        content1: "Spiral Cosmos is an open-source organization created for the purpose of learning and growing. It works on various projects with the main purpose of improving along the way. It has been founded and maintained by me.",
+        heading2: "Website",
+        content2: "To know more about Spiral Cosmos, you may head on <a href = 'www.spiralcosmos.com'>Here</a>"
     },
     
     {
         id: "robotics",
-        image: "/assets/images/Main-Website.svg",
+        image: "/assets/images/Main-Robotics.svg",
         title: "Robotics",
-        byline: "Hardware Projects using Aurdino/Atmega",
+        byline: "Hardware Projects using Arduino/Atmega",
         heading1: "About",
-        content1: "Weather is an Artificial Intelligent, personalized Computer Assistant. It works on two modes; Voice Command Recognition and Command-Line based text mode. Cynthia has a variety of features and, is much more than the conventional weather, memo assistant. It can control the entirety of your device, including your web browser, just with your voice. You can personalize this assistant to any extent by adding customized commands.",
-        heading2: "Source Code",
-        content2: "Cynthia is an Artificial Intelligent, personalized Computer Assistant. It works on two modes; Voice Command Recognition and Command-Line based text mode. Cynthia has a variety of features and, is much more than the conventional weather, memo assistant. It can control the entirety of your device, including your web browser, just with your voice. You can personalize this assistant to any extent by adding customized commands."
+        content1: "Robotics is an interdisciplinary branch of engineering and science that includes information engineering, computer science, and others. Robotics deals with the design, construction, operation, and use of robots, as well as computer systems for their control, sensory feedback, and information processing.<br><br>Arduino/Atmega Boards are used for creating interactive objects or environments. These can interact with buttons, LEDs, motors, speakers, GPS units, cameras, the internet and more.<br><br>I've made several projects using different kinds of Arduino boards for functionality. The projects range from basic projects like Line Follower, Block Follower to even using the boards to analyze and understand the concepts of digital and analog signals.",
+        heading2: "Projects",
+        content2: "Some of the projects are given below:<br><br>● Various Applications of an Infrared Sensor<br>● Analyzing and understanding the concepts of digital and analog signals<br>● Line Follower Bot<br>● Obstruction Follower<br><br><img src='/assets/images/Project-Images/Robot-1.jpg'/><img src='/assets/images/Project-Images/Robot-2.jpg' style='margin-left:2vw;'/>"
     },
 
     {
