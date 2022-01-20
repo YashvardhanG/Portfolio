@@ -5,8 +5,8 @@ function get()
 {
     toggle = localStorage.getItem("toggle");
     filename = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
-    console.log(toggle);
-    console.log(filename);
+    // console.log(toggle);
+    // console.log(filename);
     if(toggle == 1)
     {
         document.addEventListener('DOMContentLoaded', (e) => {
@@ -19,14 +19,14 @@ function change()
 {
     if (document.getElementById("toggle").checked) 
     {
-        console.log("1");
+        // console.log("1");
         localStorage.setItem("toggle", 1);
         dark(filename);
     }
     
     else 
     {
-        console.log("2");
+        // console.log("2");
         localStorage.setItem("toggle", 2);
         light();
     }
@@ -112,11 +112,7 @@ function dark(filename)
 
     else 
     {
-        document.body.style.background = "#263140";
-        document.body.style.color = "#fff";
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundImage = 'url(./assets/images/BG-Home-Dark.png)';
-        document.getElementById("active").style = "background: #263140;"
+        dark("index.html");
     }
 }
 
