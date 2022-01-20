@@ -123,8 +123,66 @@ function light()
     location.reload();
 }
 
+function toggle_shortcut()
+{
+    toggle = localStorage.getItem("toggle");   
+    if(toggle == "0")
+    {
+        localStorage.setItem("toggle", 1);
+        location.reload();
+    }
+
+    else
+    {
+        localStorage.setItem("toggle", 0);
+        location.reload();
+    }
+}
+
+var display = 0;
+function helpbox()
+{
+    toggle = localStorage.getItem("toggle"); 
+    var helpbox = document.getElementById("helpbox");
+    var helpbox_content = document.getElementById("helpbox_content");
+
+    if(toggle == "0")
+    {
+        if(display == 0)
+        {
+            helpbox.style.display = "block";
+            display = 1;
+        }
+
+        else
+        {
+            helpbox.style.display = "none";
+            display = 0;
+        }
+    }
+
+    else
+    {
+        if(display == 0)
+        {
+            helpbox.style.display = "block";
+            helpbox_content.style.backgroundColor = "#263140";
+            helpbox_content.style.borderColor = "#000";
+            display = 1;
+        }
+
+        else
+        {
+            helpbox.style.display = "none";
+            display = 0;
+        }
+    }
+}
+
 window.addEventListener("load", get());
 window.addEventListener("keyup", function(e) {if (e.keyCode === 49){location.replace("/index.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 50){location.replace("/html/project.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 51){location.replace("/html/blog.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 52){location.replace("/html/contact.html");}});
+window.addEventListener("keyup", function(e) {if (e.keyCode === 84){toggle_shortcut();}});
+window.addEventListener("keyup", function(e) {if (e.keyCode === 191){helpbox();}});
