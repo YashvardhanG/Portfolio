@@ -168,8 +168,22 @@ function back()
     document.getElementById(projects[index].id).scrollIntoView(); 
 }
 
+function scroll_down()
+{
+    var view = document.getElementById('project-detail');
+    view.scrollBy({top: 200, behavior: 'smooth'}); 
+}
+
+function scroll_up()
+{
+    var view = document.getElementById('project-detail');
+    view.scrollBy({top: -200, behavior: 'smooth'});
+}
+
 window.addEventListener("load", bg("apac"));
 window.addEventListener("load", details("apac"));
 window.addEventListener("load", get());
 window.addEventListener("keyup", function(e) {if (e.keyCode === 39){next();}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 37){back();}});
+window.addEventListener("keyup", function(e) {if (e.keyCode === 40){scroll_down();}});
+window.addEventListener("keyup", function(e) {if (e.keyCode === 38){scroll_up();}});
