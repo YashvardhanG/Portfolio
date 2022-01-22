@@ -324,7 +324,8 @@ function next()
     
     bg(projects[index].id);
     details(projects[index].id);
-    document.getElementById(projects[index].id).scrollIntoView(); 
+    var view = document.getElementById('pane_container');
+    view.scrollBy({top: 70, behavior: 'smooth'}); 
 }
 
 function back()
@@ -336,7 +337,8 @@ function back()
     
     bg(projects[index].id);
     details(projects[index].id); 
-    document.getElementById(projects[index].id).scrollIntoView(); 
+    var view = document.getElementById('pane_container');
+    view.scrollBy({top: -70, behavior: 'smooth'}); 
 }
 
 function scroll_down()

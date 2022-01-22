@@ -18,7 +18,7 @@ const blog = [
         heading1: "About",
         content1: "Various courses dealing with an array of topics were completed. These courses were offered by different institutions and organizations. These were thorough, precise and informative.",
         heading2: "Courses",
-        content2: "Here is the list of all completed courses:<br><br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/ASFB86ZUESYL'>High-Fidelity Designs and Prototypes</a> - Google<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/KL7V77N3EB5J'>AWS Cloud Technical Essentials</a> - Amazon Web Services (AWS)<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/H9PFQ2ZXLA3S'>Introduction to TensorFlow for AI, ML, and Deep Learning</a> - DeepLearning.AI<br>● <a href = 'https://www.credly.com/badges/d10c9872-78c2-4230-b577-a3179c0b1bcb/public_url'>Introduction to Packet Tracer</a> - Cisco Networking Academy<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/RYMCVM774G5A'>Interactivity with JavaScript</a> - University of Michigan<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/PPV9UM6UM4AH'>Responsive Website Basics</a> - University of London<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/FX8Q8C9UR2LU'>Data Science</a> - IBM<br>● <a href = ''>Fundamentals of Digital Marketing</a> - Google<br>● <a href = 'https://www.futurelearn.com/certificates/hnqog2o'>Introduction to Creative AI</a> - University of Arts, London<br>● <a href = 'https://www.futurelearn.com/certificates/6x4xbpg'>Computer Programming for Everyone</a> - University of Leeds<br>"
+        content2: "Here is the list of all completed courses:<br><br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/ASFB86ZUESYL'>High-Fidelity Designs and Prototypes</a> - Google<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/KL7V77N3EB5J'>AWS Cloud Technical Essentials</a> - Amazon Web Services (AWS)<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/H9PFQ2ZXLA3S'>Introduction to TensorFlow for AI, ML, and Deep Learning</a> - DeepLearning.AI<br>● <a href = 'https://www.credly.com/badges/d10c9872-78c2-4230-b577-a3179c0b1bcb/public_url'>Introduction to Packet Tracer</a> - Cisco Networking Academy<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/RYMCVM774G5A'>Interactivity with JavaScript</a> - University of Michigan<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/PPV9UM6UM4AH'>Responsive Website Basics</a> - University of London<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/FX8Q8C9UR2LU'>Data Science</a> - IBM<br>● <a href = 'https://drive.google.com/file/d/1WtvDlpeqlVKHQg7E_4LQhwBWUfKzVPdL/view?usp=sharing'>Fundamentals of Digital Marketing</a> - Google<br>● <a href = 'https://www.futurelearn.com/certificates/hnqog2o'>Introduction to Creative AI</a> - University of Arts, London<br>● <a href = 'https://www.futurelearn.com/certificates/6x4xbpg'>Computer Programming for Everyone</a> - University of Leeds<br>"
     },
     
     {
@@ -153,7 +153,8 @@ function next()
     
     bg(blog[index].id);
     details(blog[index].id); 
-    document.getElementById(projects[index].id).scrollIntoView(); 
+    var view = document.getElementById('pane_container');
+    view.scrollBy({top: 70, behavior: 'smooth'}); 
 }
 
 function back()
@@ -165,7 +166,8 @@ function back()
     
     bg(blog[index].id);
     details(blog[index].id); 
-    document.getElementById(projects[index].id).scrollIntoView(); 
+    var view = document.getElementById('pane_container');
+    view.scrollBy({top: -70, behavior: 'smooth'}); 
 }
 
 function scroll_down()
