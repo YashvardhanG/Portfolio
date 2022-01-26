@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href='css/phone.css' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>$(function(){$("#home_social a").attr("target","_blank");});</script>
     <script src="/js/mode.js"></script>
@@ -36,12 +37,14 @@
     
         <!-- home right  -->
         <div class="home_right">
-            <input type="checkbox" id="toggle" class="toggle--checkbox" onclick="change()"/>
-            <label for="toggle" class="toggle--label" title="Toggle | Press Key t">  
-                <span class="toggle--label-background"></span>
-            </label>
+            <div class="toggle" id="top_right">
+                <input type="checkbox" id="toggle" class="toggle--checkbox" onclick="change()"/>
+                <label for="toggle" class="toggle--label" title="Toggle | Press Key t">  
+                    <span class="toggle--label-background"></span>
+                </label>
+            </div>
             <h2>Hey There!&#128075;</h2>
-            <h1>I'm <strong style="font-size: 42px; font-weight: 1200;">Yashvardhan Gupta </strong><sup style="font-size: 15px; font-weight: 300;">(He/Him)</sup></h1>
+            <h1>I'm<strong id="name"> Yashvardhan Gupta</strong><sup id="pronouns"> (He/Him)</sup></h1>
             <p>I’m a 19 year old Developer, Programmer, Designer, Guitarist and motivated, innovative colleague and leader with a strong will to learn, develop, and acquire new skills.
                 <br><br>
                 Currently involved with numerous projects including, Application Development, Web Development, Game Development, Graphic Designing and much more. I'll honoured if you could head on to the <a href="/html/project.html">Projects page</a>, and take a look at the various projects I've been working on and, share your reviews with me.  

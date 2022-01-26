@@ -223,7 +223,7 @@ function get()
 {
     for (const key in projects) 
     {     
-        document.getElementById(projects[key].id).addEventListener("click", function() {details(projects[key].id); bg(projects[key].id)}, false);       
+        document.getElementById(projects[key].id).addEventListener("click", function() {details(projects[key].id); bg(projects[key].id)}, false);
     }
 }
 
@@ -353,9 +353,24 @@ function scroll_up()
     view.scrollBy({top: -200, behavior: 'smooth'});
 }
 
+function phone()
+{
+    if(window.matchMedia("(max-width: 768px)").matches)
+    {
+        document.getElementById("pane").style.visibility = "hidden";
+    }
+
+    if (window.matchMedia("(min-width: 768px)").matches) 
+    {
+        var elem = document.getElementById('menu');
+        elem.parentNode.removeChild(elem);
+    }
+}
+
 window.addEventListener("load", bg("cynthia"));
 window.addEventListener("load", details("cynthia"));
 window.addEventListener("load", get());
+window.addEventListener("load", phone());
 window.addEventListener("keyup", function(e) {if (e.keyCode === 39){next();}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 37){back();}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 40){scroll_down();}});

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/phone.css" />
     <script src="/js/mode.js"></script>
     <title>Projects</title>
 </head>
@@ -20,6 +21,7 @@
     </div>
     
     <!-- pane -->
+    <button type="button" id="menu" onclick="project_menu()">☰</button>
     <div class="pane" id="pane">
         <div class="heading">
             <h1>Projects</h1><h3>Total: 19</h3>
@@ -123,6 +125,22 @@
         </div>
     </div>
 
+    <script>
+        function project_menu() 
+        {
+            let toggle = document.getElementById("pane");
+            if (toggle.style.visibility == "visible") 
+            {
+                toggle.style.visibility = "hidden";
+                console.log(toggle.style.visibility);
+            }
+            
+            else {
+                toggle.style.visibility = "visible";
+                console.log(toggle.style.visibility);
+            }
+        }
+    </script>
     <script src="/js/project.js"></script>
 </body>
 </html>
