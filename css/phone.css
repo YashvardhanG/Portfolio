@@ -472,7 +472,9 @@ button#menu {
 }
 
 .project-detail h3 {
-	align-self: center;
+	display: flex;
+	width: 98vw;
+	justify-content: center;
 	font-weight: 300;
 	font-size: 18px;
 	padding-bottom: 6vh;
