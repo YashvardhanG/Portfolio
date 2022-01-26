@@ -286,6 +286,8 @@ function details(id = "cynthia")
 
 function bg(id = "cynthia")
 {
+    document.body.style.backgroundAttachment = 'fixed';
+    
     var select = `.pane-project#` + id +` {background-color: #8D24DF; border: 5px solid white; border-radius: 0px 20px 20px 20px; outline-offset: 3px; color: white;}
                   .pane-project#` + id + ` h2 {font-weight: 600;}`
 
@@ -300,7 +302,7 @@ function bg(id = "cynthia")
         else
         {
             var unselect = `.pane-project#` + projects[key].id +` {background-color: #fff; border: 0px solid white; border-radius: 0px 0px 0px 0px; outline-offset: 3px; color: #263140;}
-                            .pane-project#` + projects[key].id + ` h2 {font-weight: 100;}`    
+                            .pane-project#` + projects[key].id + ` h2 {font-weight: 100;}`                      
         }
         
         var styleSheet = document.createElement("style")
@@ -313,6 +315,11 @@ function bg(id = "cynthia")
     styleSheet.type = "text/css"
     styleSheet.innerText = select
     document.head.appendChild(styleSheet)
+
+    if(window.matchMedia("(max-width: 768px)").matches)
+    {
+        document.getElementById("pane").style.visibility = "hidden";
+    }
 }
 
 function next()

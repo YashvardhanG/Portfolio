@@ -116,6 +116,8 @@ function details(id = "apac")
 
 function bg(id = "apac")
 {
+    document.body.style.backgroundAttachment = 'fixed';
+    
     var select = `.pane-project#` + id +` {background-color: #8D24DF; border: 5px solid white; border-radius: 0px 20px 20px 20px; outline-offset: 3px; color: white;}
                   .pane-project#` + id + ` h2 {font-weight: 600;}`
 
@@ -142,6 +144,11 @@ function bg(id = "apac")
     styleSheet.type = "text/css"
     styleSheet.innerText = select
     document.head.appendChild(styleSheet)
+
+    if(window.matchMedia("(max-width: 768px)").matches)
+    {
+        document.getElementById("pane").style.visibility = "hidden";
+    }
 }
 
 function next()
