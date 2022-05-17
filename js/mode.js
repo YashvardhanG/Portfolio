@@ -9,12 +9,19 @@ function get()
 
     // console.log(toggle);
     // console.log(filename);
+    if(toggle == null)
+    {
+        localStorage.setItem("toggle", 0);
+    }
+
     if(toggle == 1)
     {
         document.addEventListener('DOMContentLoaded', (e) => {
             dark(filename);
         });
     }
+
+    setTimeout(function(){pop();}, 500); 
 }
 
 function change() 
@@ -159,11 +166,8 @@ function helpbox()
         if(display == 0)
         {
             helpbox_content.style.backgroundColor = "#FFFFFF";
-            setTimeout(function()
-            {
-                helpbox.style.display = "block";
-                popup.style.display = "none";
-            }, 250); 
+            helpbox.style.display = "block";
+            popup.style.display = "none";
             display = 1;
         }
 
@@ -205,10 +209,7 @@ function popup()
         if(displaypop == 0)
         {
             helpbox_content.style.backgroundColor = "#FFFFFF";
-            setTimeout(function()
-            {
-                helpbox.style.display = "block";
-            }, 250); 
+            helpbox.style.display = "block";
             displaypop = 1;
         }
 
@@ -242,12 +243,9 @@ function pop()
     user_count = localStorage.getItem("times");
     if(user_count == null)
     {
-        toggle = 0;
+        localStorage.setItem("toggle", 0);
         localStorage.setItem("times", 0);
-        setTimeout(function()
-        {
-            popup();
-        }, 1000); 
+        setTimeout(function(){popup();}, 500); 
     }
 
     if (filename == "index.html")
@@ -259,20 +257,16 @@ function pop()
         // console.log(user_count);
         if(((parseInt(user_count) % 2) == 0))
         {   
-            setTimeout(function()
-            {
-                popup();
-            }, 1000); 
+            setTimeout(function(){popup();}, 1000); 
         }
     }
 }
 
 window.addEventListener("load", get());
-window.addEventListener("load", pop());
 window.addEventListener("keyup", function(e) {if (e.keyCode === 49){location.replace("/index.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 50){location.replace("/html/project.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 51){location.replace("/html/blog.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 52){location.replace("/html/contact.html");}});
+window.addEventListener("keyup", function(e) {if (e.keyCode === 80){popup();}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 84){toggle_shortcut();}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 191){helpbox();}});
-window.addEventListener("keyup", function(e) {if (e.keyCode === 80){popup();}});
