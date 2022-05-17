@@ -158,9 +158,12 @@ function helpbox()
     {
         if(display == 0)
         {
-            helpbox.style.display = "block";
-            popup.style.display = "none";
             helpbox_content.style.backgroundColor = "#FFFFFF";
+            setTimeout(function()
+            {
+                helpbox.style.display = "block";
+                popup.style.display = "none";
+            }, 250); 
             display = 1;
         }
 
@@ -201,8 +204,11 @@ function popup()
     {
         if(displaypop == 0)
         {
-            helpbox.style.display = "block";
             helpbox_content.style.backgroundColor = "#FFFFFF";
+            setTimeout(function()
+            {
+                helpbox.style.display = "block";
+            }, 250); 
             displaypop = 1;
         }
 
