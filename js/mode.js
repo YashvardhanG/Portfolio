@@ -238,6 +238,10 @@ function pop()
         {
             localStorage.setItem("times", 0);
             user_count = localStorage.getItem("times");
+            setTimeout(function()
+            {
+                popup();
+            }, 1000); 
         }
     
         else
@@ -248,7 +252,7 @@ function pop()
         }
         
         // console.log(user_count);
-        if((parseInt(user_count)%2) == 0 || user_count == 0)
+        if((parseInt(user_count)%2) == 0)
         {   
             setTimeout(function()
             {
