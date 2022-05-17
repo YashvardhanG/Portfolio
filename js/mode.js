@@ -1,10 +1,12 @@
 var toggle;
 var filename;
+var user_count;
 
 function get() 
 {
     toggle = localStorage.getItem("toggle");
     filename = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+
     // console.log(toggle);
     // console.log(filename);
     if(toggle == 1)
@@ -99,7 +101,7 @@ function dark(filename)
         document.body.style.backgroundImage = 'url(/assets/images/BG-Contact-Dark.png)';
         document.body.style.backgroundSize = 'cover';
         document.getElementById("home").src = "/assets/images/Home-Dark.svg";
-        document.getElementById("button").src = "/assets/images/Home-Icon-Dark.svg";
+        document.getElementById("button").src = "/assets/images/CV-Dark.svg";
         document.getElementById("contact").src = "/assets/images/Contact-Image-Dark.png";
         document.getElementById("blog").src = "/assets/images/Blog-Dark.svg";
         document.getElementById("projects").src = "/assets/images/Projects-Dark.svg";
@@ -149,6 +151,7 @@ function helpbox()
 {
     toggle = localStorage.getItem("toggle"); 
     var helpbox = document.getElementById("helpbox");
+    var popup = document.getElementById("popup");
     var helpbox_content = document.getElementById("helpbox_content");
 
     if(toggle == "0")
@@ -156,6 +159,7 @@ function helpbox()
         if(display == 0)
         {
             helpbox.style.display = "block";
+            popup.style.display = "none";
             display = 1;
         }
 
@@ -173,6 +177,7 @@ function helpbox()
             helpbox.style.display = "block";
             helpbox_content.style.backgroundColor = "#263140";
             helpbox_content.style.borderColor = "#000";
+            popup.style.display = "none";
             display = 1;
         }
 
@@ -184,10 +189,81 @@ function helpbox()
     }
 }
 
+var displaypop = 0;
+function popup()
+{
+    toggle = localStorage.getItem("toggle"); 
+    var helpbox = document.getElementById("popup");
+    var helpbox_content = document.getElementById("popup_content");
+
+    if(toggle == "0")
+    {
+        if(displaypop == 0)
+        {
+            helpbox.style.display = "block";
+            displaypop = 1;
+        }
+
+        else
+        {
+            helpbox.style.display = "none";
+            displaypop = 0;
+        }
+    }
+
+    else
+    {
+        if(displaypop == 0)
+        {
+            helpbox.style.display = "block";
+            helpbox_content.style.backgroundColor = "#263140";
+            helpbox_content.style.borderColor = "#000";
+            displaypop = 1;
+        }
+
+        else
+        {
+            helpbox.style.display = "none";
+            displaypop = 0;
+        }
+    }
+}
+
+function pop()
+{
+    if (filename == "index.html")
+    {
+        user_count = localStorage.getItem("times");
+        if(user_count == null)
+        {
+            localStorage.setItem("times", 0);
+            user_count = localStorage.getItem("times");
+        }
+    
+        else
+        {
+            var new_count =  parseInt(localStorage.getItem("times")) + 1;
+            localStorage.setItem("times", new_count);
+            user_count = localStorage.getItem("times");
+        }
+        
+        // console.log(user_count);
+        if((parseInt(user_count)%2) == 0 || user_count == 0)
+        {   
+            setTimeout(function()
+            {
+                popup();
+            }, 1000); 
+        }
+    }
+}
+
 window.addEventListener("load", get());
+window.addEventListener("load", pop());
 window.addEventListener("keyup", function(e) {if (e.keyCode === 49){location.replace("/index.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 50){location.replace("/html/project.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 51){location.replace("/html/blog.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 52){location.replace("/html/contact.html");}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 84){toggle_shortcut();}});
 window.addEventListener("keyup", function(e) {if (e.keyCode === 191){helpbox();}});
+window.addEventListener("keyup", function(e) {if (e.keyCode === 80){popup();}});
