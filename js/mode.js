@@ -160,6 +160,7 @@ function helpbox()
         {
             helpbox.style.display = "block";
             popup.style.display = "none";
+            helpbox_content.style.backgroundColor = "#FFFFFF";
             display = 1;
         }
 
@@ -201,6 +202,7 @@ function popup()
         if(displaypop == 0)
         {
             helpbox.style.display = "block";
+            helpbox_content.style.backgroundColor = "#FFFFFF";
             displaypop = 1;
         }
 
