@@ -231,24 +231,24 @@ function popup()
 
 function pop()
 {
+    user_count = localStorage.getItem("times");
+    if(user_count == null)
+    {
+        localStorage.setItem("times", 0);
+        setTimeout(function()
+        {
+            popup();
+        }, 1000); 
+    }
+
     if (filename == "index.html")
     {
+        var new_count =  parseInt(localStorage.getItem("times")) + 1;
+        localStorage.setItem("times", new_count);
         user_count = localStorage.getItem("times");
-        if(user_count == null)
-        {
-            localStorage.setItem("times", 0);
-            user_count = localStorage.getItem("times");
-        }
-    
-        else
-        {
-            var new_count =  parseInt(localStorage.getItem("times")) + 1;
-            localStorage.setItem("times", new_count);
-            user_count = localStorage.getItem("times");
-        }
         
         // console.log(user_count);
-        if(((parseInt(user_count) % 2) == 0) || (user_count == 0))
+        if(((parseInt(user_count) % 2) == 0))
         {   
             setTimeout(function()
             {
