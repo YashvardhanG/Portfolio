@@ -234,6 +234,7 @@ function pop()
     user_count = localStorage.getItem("times");
     if(user_count == null)
     {
+        toggle = 0;
         localStorage.setItem("times", 0);
         setTimeout(function()
         {
