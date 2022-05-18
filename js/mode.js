@@ -7,8 +7,6 @@ function get()
     toggle = localStorage.getItem("toggle");
     filename = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
 
-    // console.log(toggle);
-    // console.log(filename);
     if(toggle == null)
     {
         localStorage.setItem("toggle", 0);
@@ -21,21 +19,22 @@ function get()
         });
     }
 
-    setTimeout(function(){pop();}, 500); 
+    if(window.matchMedia("(min-width: 768px)").matches)
+    {
+        setTimeout(function(){pop();}, 500); 
+    }
 }
 
 function change() 
 {
     if (document.getElementById("toggle").checked) 
     {
-        // console.log("1");
         localStorage.setItem("toggle", 1);
         dark(filename);
     }
     
     else 
     {
-        // console.log("2");
         localStorage.setItem("toggle", 2);
         light();
     }
@@ -197,44 +196,23 @@ function helpbox()
     }
 }
 
-var displaypop = 0;
 function popup()
 {
     toggle = localStorage.getItem("toggle"); 
-    var helpbox = document.getElementById("popup");
-    var helpbox_content = document.getElementById("popup_content");
+    var popup = document.getElementById("popup");
+    var popup_content = document.getElementById("popup_content");
 
     if(toggle == "0")
     {
-        if(displaypop == 0)
-        {
-            helpbox_content.style.backgroundColor = "#FFFFFF";
-            helpbox.style.display = "block";
-            displaypop = 1;
-        }
-
-        else
-        {
-            helpbox.style.display = "none";
-            displaypop = 0;
-        }
+        popup_content.style.backgroundColor = "#FFFFFF";
+        popup.style.display = "block";
     }
 
     else
     {
-        if(displaypop == 0)
-        {
-            helpbox.style.display = "block";
-            helpbox_content.style.backgroundColor = "#263140";
-            helpbox_content.style.borderColor = "#000";
-            displaypop = 1;
-        }
-
-        else
-        {
-            helpbox.style.display = "none";
-            displaypop = 0;
-        }
+        popup_content.style.backgroundColor = "#263140";
+        popup_content.style.borderColor = "#000";
+        popup.style.display = "block";
     }
 }
 
@@ -248,13 +226,17 @@ function pop()
         setTimeout(function(){popup();}, 500); 
     }
 
+    if(isNaN(user_count) == true)
+    {   
+        localStorage.setItem("times", 0);
+    }
+    
     if (filename == "index.html")
     {
         var new_count =  parseInt(localStorage.getItem("times")) + 1;
         localStorage.setItem("times", new_count);
         user_count = localStorage.getItem("times");
         
-        // console.log(user_count);
         if(((parseInt(user_count) % 2) == 0))
         {   
             setTimeout(function(){popup();}, 1000); 
