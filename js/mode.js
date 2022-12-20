@@ -224,7 +224,7 @@ function pop()
     user_count = localStorage.getItem("times");
     if(user_count == null)
     {
-        localStorage.setItem("toggle", 0);
+        localStorage.setItem("toggle", 1);
         localStorage.setItem("times", 0);
         setTimeout(function(){popup();}, 500); 
     }
