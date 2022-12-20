@@ -9,7 +9,10 @@ function get()
 
     if(toggle == null)
     {
-        localStorage.setItem("toggle", 0);
+        localStorage.setItem("toggle", 1);  
+        document.addEventListener('DOMContentLoaded', (e) => {
+            dark(filename);
+        });
     }
 
     if(toggle == 1)

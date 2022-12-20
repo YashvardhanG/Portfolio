@@ -519,6 +519,15 @@ button #menu {
 	flex-direction: column;
 }
 
+#text {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin-right: 3vw;
+	margin-top: 19vh;
+	font-weight: 600;
+}
+
 .contact_right #contact_top-right {
 	align-self: flex-end;
 	margin-top: 7vh;

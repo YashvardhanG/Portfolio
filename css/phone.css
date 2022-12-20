@@ -514,12 +514,26 @@ button#menu {
 	margin-right: 7vw;
 }
 
-.contact_right img#button {
+.contact_right img#button 
+{
 	height: 40px;	
+	position: absolute;
+	left: 0px;
+	padding-left: 8vw;
 }
 
-.contact_right img{
-	height: 150px;
+#text 
+{
+	position: absolute;
+	left: 0px;
+	margin-left: 20vw;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.contact_right img#contact{
+	height: 10px;
+	visibility: hidden;
 }
 
 /* HELPBOX */
