@@ -1,32 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
-
-@font-face {
-	font-family: Poppins;
-	src: url('/assets/font/Poppins-Regular.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: Poppins;
-	src: url('/assets/font/Poppins-Medium.ttf') format('truetype');
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: Poppins;
-	src: url('/assets/font/Poppins-Bold.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: Poppins;
-	src: url('/assets/font/Poppins-Light.ttf') format('truetype');
-	font-weight: 100;
-	font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* GENERAL */
 * {
@@ -145,19 +117,19 @@ a {
 
 .home_right h2 {
 	margin-top: 7vh;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 40px;
 	display: inline;
 }
 
 .home_right h1 {
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 40px;
 	display: inline;	
 }
 
 .home_right strong {
-    font-weight: 1200;
+    font-weight: 800;
     font-size: 42px;
 }
 
@@ -168,8 +140,8 @@ a {
 
 .home_right p {
 	margin-top: 5vh;
-	font-weight: 300;
-	font-size: 15px;
+	font-weight: 400;
+	font-size: 14.5px;
 	display: inline;	
 	text-align: justify;
 	width: 45vw;
@@ -366,7 +338,7 @@ a {
 }
 
 .heading h1 {
-	font-weight: 900;
+	font-weight: 1200;
 	font-size: 30px;
 	float: left;
 }
@@ -603,6 +575,7 @@ button #menu {
 	color: #FFF;
 	font-size: 14px;
 	margin-right: 1vw;
+	font-weight: 800;
 }
 
 .helpbox_content b#heading_bold 
@@ -611,6 +584,7 @@ button #menu {
 	margin-left: 1vw;
 	position: absolute;
 	margin-top: 1vh;
+	font-weight: 800;
 }
 
 .helpbox_content p 

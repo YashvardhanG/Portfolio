@@ -53,7 +53,7 @@ function dark(filename)
         document.getElementById("toggle").checked = true;
         document.body.style.background = "#263140";
         document.body.style.color = "#fff";
-        document.body.style.backgroundImage = 'url(./assets/images/BG-Home-Dark.png)';
+        document.body.style.backgroundImage = 'url(./assets/images/BG-Home-Dark-min.webp)';
         document.body.style.backgroundSize = 'cover';
         document.getElementById("LinkedIn").src = "./assets/images/LinkedIn-Dark.png";
         document.getElementById("GitHub").src = "./assets/images/GitHub-Dark.png";
@@ -68,7 +68,7 @@ function dark(filename)
     {
         document.body.style.background = "#263140";
         document.body.style.color = "#fff";
-        document.body.style.backgroundImage = 'url(/assets/images/BG-Projects-Dark.png)';
+        document.body.style.backgroundImage = 'url(/assets/images/BG-Projects-Dark-min.webp)';
         document.body.style.backgroundSize = 'cover';
         document.getElementById("home").src = "/assets/images/Home-Dark.svg";
         document.getElementById("blog").src = "/assets/images/Blog-Dark.svg";
@@ -86,7 +86,7 @@ function dark(filename)
     {
         document.body.style.background = "#263140";
         document.body.style.color = "#fff";
-        document.body.style.backgroundImage = 'url(/assets/images/BG-Blog-Dark.png)';
+        document.body.style.backgroundImage = 'url(/assets/images/BG-Blog-Dark-min.webp)';
         document.body.style.backgroundSize = 'cover';
         document.getElementById("home").src = "/assets/images/Home-Dark.svg";
         document.getElementById("projects").src = "/assets/images/Projects-Dark.svg";
@@ -104,11 +104,11 @@ function dark(filename)
     {
         document.body.style.background = "#263140";
         document.body.style.color = "#fff";
-        document.body.style.backgroundImage = 'url(/assets/images/BG-Contact-Dark.png)';
+        document.body.style.backgroundImage = 'url(/assets/images/BG-Contact-Dark-min.webp)';
         document.body.style.backgroundSize = 'cover';
         document.getElementById("home").src = "/assets/images/Home-Dark.svg";
         document.getElementById("button").src = "/assets/images/CV-Dark.svg";
-        document.getElementById("contact").src = "/assets/images/Contact-Image-Dark.png";
+        document.getElementById("contact").src = "/assets/images/Contact-Image-Dark-min.webp";
         document.getElementById("blog").src = "/assets/images/Blog-Dark.svg";
         document.getElementById("projects").src = "/assets/images/Projects-Dark.svg";
         document.getElementById("active").style = "background: #263140;"

@@ -10,7 +10,7 @@
     <script src="/js/mode.js"></script>
     <title>Blog</title>
 </head>
-<body style="background-image: url(/assets/images/BG-Blog.png); background-size: cover;">
+<body style="background-image: url(/assets/images/BG-Blog-min.webp); background-size: cover;">
     <!-- navbar -->
     <div class = "navbar">
         <ul>
@@ -25,16 +25,28 @@
     <button type="button" id="menu" onclick="blog_menu()">☰</button>
     <div class="pane" id="pane">
         <div class="heading">
-            <h1>Blog & Links</h1><h3>Total:4</h3>
+            <h1>Experience</h1><h3>Total: <b><span id = "total"></span></b></h3>
         </div>
         <div class="pane-project-container" id="pane_container">
+            <div class="pane-project" id="courses">
+                <img src="/assets/images/Icon-Certificate.svg" alt="">
+                <h2>Certification and Courses</h2>
+            </div>
+            <div class="pane-project" id="samsung">
+                <img src="/assets/images/Icon-Samsung.svg" alt="">
+                <h2>Samsung R&D Internship</h2>
+            </div>
+            <div class="pane-project" id="ccps">
+                <img src="/assets/images/Icon-CCPS.svg" alt="">
+                <h2>Research Internship | CCPS, VITC</h2>
+            </div>
+            <div class="pane-project" id="hc">
+                <img src="/assets/images/Icon-HC.svg" alt="">
+                <h2>Hack Club | Core Committee</h2>
+            </div>
             <div class="pane-project" id="apac">
                 <img src="/assets/images/Icon-Graphics.svg" alt="">
                 <h2>Asia Virtual Conference</h2>
-            </div>
-            <div class="pane-project" id="courses">
-                <img src="/assets/images/Icon-Certificate.svg" alt="">
-                <h2>Online Courses</h2>
             </div>
             <div class="pane-project" id="achieve">
                 <img src="/assets/images/Icon-Trophy.svg" alt="">
@@ -81,6 +93,9 @@
                 console.log(toggle.style.visibility);
             }
         }
+
+        elements = document.getElementsByClassName("pane-project");
+        document.getElementById("total").innerHTML = elements.length;
     </script>
     <script src="/js/blog.js"></script>
 </body>

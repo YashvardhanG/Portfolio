@@ -12,7 +12,7 @@
     <script src="/js/mode.js"></script>
     <title>Home</title>
 </head>
-<body style="background-image: url(/assets/images/BG-Home.png); background-size: cover;">
+<body style="background-image: url(/assets/images/BG-Home-min.webp); background-size: cover;">
     <div class="home-page">
         <!-- navbar -->
         <div class = "navbar">
@@ -26,7 +26,7 @@
     
         <!-- home left  -->
         <div class = "home_left">
-            <img src = "/assets/images/DP.png" id = "DP">
+            <img src = "/assets/images/DP.jpeg" id = "DP" style="border-radius: 100%;">
             <div class = "home_social" id = "home_social">
                 <ul>
                     <li><a href="https://www.linkedin.com/in/yashvardhang11/" title="LinkedIn"><img src="/assets/images/LinkedIn.png" alt="" id="LinkedIn"></a></li>
@@ -46,12 +46,20 @@
             </div>
             <h2>Hey There!&#128075;</h2>
             <h1>I'm<strong id="name"> Yashvardhan Gupta</strong><sup id="pronouns"> (He/Him)</sup></h1>
-            <p>I’m a 19-year-old Developer, Programmer, Designer, Guitarist; A motivated, innovative colleague and leader with a strong will to learn, develop, and acquire new skills.
+            <p>I’m a <span id="age"></span>-year-old Developer, Programmer, Designer, Guitarist; A motivated, innovative colleague and leader with a strong will to learn, develop, and acquire new skills.
                 <br><br>
                 Currently involved with numerous projects including, Application Development, Web Development, Game Development, Graphic Designing and much more. I'd love it if you could head on to the <a href="/html/project.html">projects page</a>, take a look at the various projects I've been working on and, share your reviews with me!  
                 <br><br>
-                I'm experienced in various programming languages - Python, C, C++, HTML, CSS, JS, SQL and more. I’m passionate about computer science and always eager to collaborate on new projects, so free to <a href="/html/contact.html">connect</a> with me.
+                I'm experienced in various programming languages - Python, C, C++, Java, JavaScript, HTML, CSS, MATLAB, R, Dart, LaTex, SQL and more. I’m passionate about computer science and always eager to collaborate on new projects, so free to <a href="/html/contact.html">connect</a> with me.
             </p>
+            <script>
+                var dob = new Date("11/07/2002");  
+                var month_diff = Date.now() - dob.getTime();  
+                var age_dt = new Date(month_diff);   
+                var year = age_dt.getUTCFullYear();  
+                var age = Math.abs(year - 1970);  
+                document.getElementById("age").innerHTML = age;
+            </script>
         </div>
     </div>
 

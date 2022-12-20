@@ -1,16 +1,5 @@
 const blog = [
     {
-        id: "apac",
-        image: "/assets/images/Main-Graphics.svg",
-        title: "Asia Virtual Conference",
-        byline: "Journey Through a Design | 03.04.2021",
-        heading1: "About",
-        content1: "I'm excited to share that I recently gave a talk on <b>'The Journey through a Design'</b> at the Asia Virtual Conference, organised by Hack Club. This talk was primarily concerned with the <b>intricacies of graphics designing</b> and the understanding workflow behind creating a design. I shared some tips and tricks on graphics designing that helped me start my journey in graphics designing and, hopefully, it would help you out in yours too.",
-        heading2: "Link to Workshop",
-        content2: "To catch up on the workshop, go here: <a href = 'https://www.youtube.com/watch?v=_C208vKrK5Q&t=907s'>Journey Through a Design</a> "
-    },
-    
-    {
         id: "courses",
         image: "/assets/images/Main-Certificate.svg",
         title: "Online Courses",
@@ -19,6 +8,50 @@ const blog = [
         content1: "I've completed various courses dealing with an array of topics. These virtual courses are offered by highly established educational institutions and organizations. They were thorough, precise and informative.",
         heading2: "Courses",
         content2: "Here is the list of all completed courses:<br><br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/ASFB86ZUESYL'>High-Fidelity Designs and Prototypes</a> - Google<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/KL7V77N3EB5J'>AWS Cloud Technical Essentials</a> - Amazon Web Services (AWS)<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/H9PFQ2ZXLA3S'>Introduction to TensorFlow for AI, ML, and Deep Learning</a> - DeepLearning.AI<br>● <a href = 'https://www.credly.com/badges/d10c9872-78c2-4230-b577-a3179c0b1bcb/public_url'>Introduction to Packet Tracer</a> - Cisco Networking Academy<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/RYMCVM774G5A'>Interactivity with JavaScript</a> - University of Michigan<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/PPV9UM6UM4AH'>Responsive Website Basics</a> - University of London<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/FX8Q8C9UR2LU'>Data Science</a> - IBM<br>● <a href = 'https://drive.google.com/file/d/1WtvDlpeqlVKHQg7E_4LQhwBWUfKzVPdL/view?usp=sharing'>Fundamentals of Digital Marketing</a> - Google<br>● <a href = 'https://www.futurelearn.com/certificates/hnqog2o'>Introduction to Creative AI</a> - University of Arts, London<br>● <a href = 'https://www.futurelearn.com/certificates/6x4xbpg'>Computer Programming for Everyone</a> - University of Leeds<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/CEZXKS9F2MWJ'>Operating Systems</a> - Google<br>"
+    },
+
+    {
+        id: "samsung",
+        image: "/assets/images/Main-Samsung.svg",
+        title: "Samsung R&D Internship",
+        byline: "Bengaluru, India | December, 2022 - Present",
+        heading1: "R&D Intern",
+        content1: "Samsung PRISM | Conducting a research in collaboration with Samsung R&D Bangaluru on Computer Science, Informational Technology and new emerging technologies and trends in the industry.",
+    },
+
+    {
+        id: "ccps",
+        image: "/assets/images/Main-CCPS.svg",
+        title: "Research Internship",
+        byline: "Centre for Cyber Physical Systems, VIT Chennai | Jun, 2022 - July, 2022",
+        heading1: "Patent Pending",
+        content1: "Conducted a research in the field of Internet of Things (IoT) in the Medical field. Built a prototype IoT device integrating Machine Learning for a medical application, filed for patent.<br><br>More details shall be disclosed once the patent is approved.",
+        heading2: "Certification",
+        content2: "<img src='/assets/images/ccps'/ alt='CCPS Certificate'>"
+    },
+
+    {
+        id: "hc",
+        image: "/assets/images/Main-HC.svg",
+        title: "Hack Club",
+        byline: "Core Committee | October 2020 - December 2022",
+        heading1: "Head of Content and Media Department",
+        content1: "<b>September 2021 - December 2022</b><br>Lead a team to create and manage content, design and media. Collaborated and Implemented technical and creative projects.",
+        heading2: "Graphic Designer",
+        content2: "<b>October 2020 - September 2021</b><br>Worked as a Graphic Designer. Extensively involves in the designing and creative process. Worked with an array of tools to design, create and manage various aspects of social media in order to increase reach.",
+        heading3: "Certification",
+        content3: "<img src='/assets/images/hc'/ alt='HC Certificate'>"
+    },
+
+    {
+        id: "apac",
+        image: "/assets/images/Main-Graphics.svg",
+        title: "Asia Virtual Conference",
+        byline: "Journey Through a Design | 03.04.2021",
+        heading1: "About",
+        content1: "I'm excited to share that I recently gave a talk on <b>'The Journey through a Design'</b> at the Asia Virtual Conference, organised by Hack Club. This talk was primarily concerned with the <b>intricacies of graphics designing</b> and the understanding workflow behind creating a design. I shared some tips and tricks on graphics designing that helped me start my journey in graphics designing and, hopefully, it would help you out in yours too.",
+        heading2: "Link to Workshop",
+        content2: "To catch up on the workshop, go here: <a href = 'https://www.youtube.com/watch?v=_C208vKrK5Q&t=907s'>Journey Through a Design</a> "
     },
     
     {
@@ -57,7 +90,7 @@ function get()
     }
 }
 
-function details(id = "apac") 
+function details(id = "courses") 
 {
     for (const key in blog) {
         if (id == blog[key].id) {
@@ -114,7 +147,7 @@ function details(id = "apac")
     }
 }
 
-function bg(id = "apac")
+function bg(id = "courses")
 {
     document.body.style.backgroundAttachment = 'fixed';
     
@@ -203,8 +236,8 @@ function phone()
     }
 }
 
-window.addEventListener("load", bg("apac"));
-window.addEventListener("load", details("apac"));
+window.addEventListener("load", bg("courses"));
+window.addEventListener("load", details("courses"));
 window.addEventListener("load", get());
 window.addEventListener("load", phone());
 window.addEventListener("keyup", function(e) {if (e.keyCode === 39){next();}});

@@ -10,7 +10,7 @@
     <script src="/js/mode.js"></script>
     <title>Projects</title>
 </head>
-<body style="background-image: url(/assets/images/BG-Projects.png); background-size: cover;">
+<body style="background-image: url(/assets/images/BG-Projects-min.webp); background-size: cover;">
     <!-- navbar -->
     <div class = "navbar">
         <ul>
@@ -25,16 +25,16 @@
     <button type="button" id="menu" onclick="project_menu()">☰</button>
     <div class="pane" id="pane">
         <div class="heading">
-            <h1>Projects</h1><h3>Total: 19</h3>
+            <h1>Projects</h1><h3>Total: <span id="total" style="font-weight: 600;"></span></h3>
         </div>
         <div class="pane-project-container" id="pane_container">
             <div class="pane-project" id="cynthia">
                 <img src="/assets/images/Icon-Cynthia.svg" alt="">
                 <h2>Cynthia</h2>
             </div>
-            <div class="pane-project" id="td">
-                <img src="/assets/images/Icon-TD.svg" alt="">
-                <h2>Tri-Death</h2>
+            <div class="pane-project" id="rtbt">
+                <img src="/assets/images/Icon-Braille.svg" alt="">
+                <h2>Real-Time Braille Translator</h2>
             </div>
             <div class="pane-project" id="cnn">
                 <img src="/assets/images/Icon-CNN.svg" alt="">
@@ -43,6 +43,18 @@
             <div class="pane-project" id="imagerec">
                 <img src="/assets/images/Icon-ImageRec.svg" alt="">
                 <h2>Image Recognition Software</h2>
+            </div>
+            <div class="pane-project" id="sqlin">
+                <img src="/assets/images/Icon-SQL.svg" alt="">
+                <h2>SQL Injection Vulnerability</h2>
+            </div>
+            <div class="pane-project" id="tm">
+                <img src="/assets/images/Icon-ML.svg" alt="">
+                <h2>No-Code Machine Learning</h2>
+            </div>
+            <div class="pane-project" id="td">
+                <img src="/assets/images/Icon-TD.svg" alt="">
+                <h2>Tri-Death</h2>
             </div>
             <div class="pane-project" id="edtech">
                 <img src="/assets/images/Icon-EdTech.svg" alt="">
@@ -141,6 +153,10 @@
                 console.log(toggle.style.visibility);
             }
         }
+
+        elements = document.getElementsByClassName("pane-project");
+        document.getElementById("total").innerHTML = elements.length;
+
     </script>
     <script src="/js/project.js"></script>
 </body>

@@ -13,14 +13,14 @@ const projects = [
     },
     
     {
-        id: "td",
-        image: "/assets/images/Main-TD.svg",
-        title: "Tri-Death",
-        byline: "Arcade Game",
+        id: "rtbt",
+        image: "/assets/images/Main-Braille.svg",
+        title: "Real-Time Braille Translator",
+        byline: "Hardware Project | Arduino",
         heading1: "About",
-        content1: "Tri-Death combines fast-paced gameplay with infinite levels to create an exciting adventure like no other. Tri-Death features many modes of varying difficulties, each mode having a different feel and a new adventure packed. The objective is not to dodge your enemies, it is to survive. Keep the aim of survival in your minds, listen to the music, dodge your enemies and continue on your endless adventure!",
-        heading2: "Play Store Link",
-        content2: "To download the game on your android device: <a href='https://play.google.com/store/apps/details?id=com.spiralcosmos.triangleofdeath'>Click Here</a>"
+        content1: "Real-Time Braille Translator is a hardware project to convert English to Braille in real-time. The aim of this project is to create a low-cost and efficient method to convert English to Braille and make it easier for visually-impaired people to read various things such as books, newspapers, etc. <br><br>This project creates a prototype device using Arduino and Linear Solenoid Actuators. This converts one letter at a time, and has currently has limited functionality. In the future, it is aimed to provide the functionality to read text using OCR methods and convert in braille in real-time.",
+        heading2: "Details",
+        content2: "Video Demonstration: <a href='https://drive.google.com/file/d/1ywGNIakYzCpweB-FrL1TJlBqk0WQDjvO/view'>Video</a>"
     },
 
     {
@@ -45,6 +45,41 @@ const projects = [
         content1: "This Image Recognition/Classification Software is built using the CIFAR-10 Dataset (Canadian Institute for Advanced Research, 10 Classes). The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. <br><br>The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class.",
         heading2: "Source Code",
         content2: "You may head on to <a href='https://github.com/YashvardhanG/CNN/tree/main/Image%20Recognition%20Software'>Image Recognition</a> to explore and know more about the project."
+    },
+
+    {
+        id: "sqlin",
+        image: "/assets/images/Main-SQL.svg",
+        title: "SQL Injection Attack Detection",
+        byline: "Python, SQL & TKinter",
+        heading1: "About",
+        content1: "This project provides the functionality for Detecting and Analysing various SQL Injection vulnerabilities in a provided website URL using a GUI-based tool. The tool works in a way that it can detect SQL Injection vulnerabilities in a query and return whether the web page is safe or not, and can redirect the user to a web page about protection against SQL injection attacks in case the webpage is unsafe and prone to injection vulnerabilities.",
+        heading2: "GUI Tool",
+        content2: "<img src='/assets/images/Project-Images/sqlin-0.png'/ style='width:700px; height:40px;'><br><img src='/assets/images/Project-Images/sqlin-1.png'/ style='width:700px; height:150px;'>"
+    },
+
+    {
+        id: "tm",
+        image: "/assets/images/Main-ML.svg",
+        title: "Teachable Machine",
+        byline: "No-Code Machine Learning Interface | KNN, JS HTML & CSS",
+        heading1: "About",
+        content1: "The No-Code Machine Learning interface is a web-based tool that makes it fast and easy to create machine learning models without any expertise or coding accessible to everyone. Users can train a simple model with the use of images without any coding required as datasets for training. And for all of this you just need setup of a computer & webcam. <br><br>This model uses a basic frontend created by HTML, CSS and Javascript and requires the KNN Model classifier as a backend. All the images that are gathered are uploaded to the server and then further on trained by putting into a KNN Classifier. Once, the images are trained with the classifier, the newly inputted images by the webcam can be tested live by the trained model. This helps you preview the accuracy of the model in realtime and if needed, you may add more training images in the database. Once done, you can download the model using a simple download button and further integrate the model in Arduino and other uses.",
+        heading2: "Functionality",
+        content2: "In order to use the system, there are primarily three steps involved: <br><b>• Gathering Data:</b> Gather and group your examples into classes, or categories, that you want the computer to learn. Upload your own image files, or capture them live with a mic or webcam.<br><b>• Train the model:</b> Click on- train model, tensorflow.js starts training a neural network in your browser.<br><b>• Testing model and Download:</b> There you can see your model output and done.",
+        heading3: "Source Code",
+        content3: "The source code for this project and all it's resources are available at: <a href = 'https://github.com/YashvardhanG/No-Code-Machine-Learning'>Source Code</a>."
+    },
+
+    {
+        id: "td",
+        image: "/assets/images/Main-TD.svg",
+        title: "Tri-Death",
+        byline: "Arcade Game",
+        heading1: "About",
+        content1: "Tri-Death combines fast-paced gameplay with infinite levels to create an exciting adventure like no other. Tri-Death features many modes of varying difficulties, each mode having a different feel and a new adventure packed. The objective is not to dodge your enemies, it is to survive. Keep the aim of survival in your minds, listen to the music, dodge your enemies and continue on your endless adventure!",
+        heading2: "Play Store Link",
+        content2: "To download the game on your android device: <a href='https://play.google.com/store/apps/details?id=com.spiralcosmos.triangleofdeath'>Click Here</a>"
     },
 
     {
