@@ -44,6 +44,28 @@ const blog = [
     },
 
     {
+        id: "hackathon",
+        image: "/assets/images/Main-Hackathon.svg",
+        title: "Code The Rush Hackathon",
+        byline: "1<sup>st</sup> Place | MedLock | March, 2023",
+        heading1: "About",
+        content1: "<b>Won 1<sup>st</sup> place in Code the Rush Hackathon</b><br><br>The problem MedLock solves:<br>1. Vulnerability to data breaches: Medical reports contain sensitive information that can be targeted by cybercriminals, but Medlock's use of the decentralized infrastructure of the Filecoin network provides enhanced security and reduces the risk of data breaches.<br><br>2. Enhanced security: Metamask authentication provides an added layer of security to the already robust encryption and decentralization features of Medlock, ensuring that only authorized users can access and manage medical reports.<br><br>3. Simplified access: Metamask authentication makes it easy for medical professionals to securely access the website account, and will redirect you to the dashboard if you have successfully logged in.<br><br>4. Privacy violations: Medical reports must be kept private to protect patient confidentiality, and Medlock's encryption and decryption features provide an added layer of privacy and security to ensure that sensitive medical information is not subject to privacy violations or unauthorized access.<br><br>5. Limitations of service providers: Traditional medical record storage systems often come with limitations and constraints imposed by service providers, but Medlock offers a more flexible and user-friendly solution, allowing medical professionals to store and manage patient data according to their preferences.<br><br>6. Integration with decentralized services: Medlock's use of web3 standards allows for seamless integration with other decentralized healthcare applications and services in the broader ecosystem, enabling medical professionals to access a wider range of tools and services to support their work.<br><br> Overall, Medlock offers a powerful solution to the challenges of storing and managing sensitive medical data, providing medical professionals with a secure, flexible, and decentralized platform for managing patient records and ensuring the privacy and security of sensitive medical information.",
+        heading2: "Source Code",
+        content2: "You may head on to <a href='https://devfolio.co/projects/medlock-7c72'>MedLock</a> to view the project."
+    },
+
+    {
+        id: "technovit",
+        image: "/assets/images/Main-Technovit.svg",
+        title: "TechnoVIT",
+        byline: "Core Committee | September, 2022",
+        heading1: "About",
+        content1: "This is the 6th Edition of technoVIT, an international level technical festival of VIT Chennai.It gives us immense pride and pleasure in presenting technoVIT' 22. This technical extravaganza will be filled with numerous activities such as workshops and technical events organised by the various schools of the University with the primary objective being, 'nurture professional skills and impart fine qualities to the students'. It also has gaming events to thrill and create an environment with fun and frolic. Additionally, technical exhibitions from various organisations are being hosted. We, at VIT Chennai promise the audience an atmosphere of immense joy leaving them the thirst for more.",
+        heading2: "Roles and Responsibilities",
+        content2: "• Managed a team of 300 volunteers and the operations of the three-day-long University Technical Fest, which had a footfall of 15000 students from various colleges.<br>• Developed and implemented strategies to ensure the smooth running of the event, including managing communication between the college administration and the student volunteers.<br>• Spearheaded the planning process, right from budgeting to event marketing and publicity.<br>• Ensured the on-time and accurate execution of the technical fest.<br>• Handled daily operations, ensuring that all activities ran smoothly and were completed on time.<br>• Ensured that all tasks related to the event were properly documented and filed for future use.<br>• Assisted in the evaluation and assessment of the event, to measure its success and areas for improvement."
+    },
+
+    {
         id: "apac",
         image: "/assets/images/Main-Graphics.svg",
         title: "Asia Virtual Conference",
