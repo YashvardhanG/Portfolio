@@ -20,7 +20,7 @@ const projects = [
         heading1: "About",
         content1: "Real-Time Braille Translator is a hardware project to convert English to Braille in real-time. The aim of this project is to create a low-cost and efficient method to convert English to Braille and make it easier for visually-impaired people to read various things such as books, newspapers, etc. <br><br>This project creates a prototype device using Arduino and Linear Solenoid Actuators. This converts one letter at a time, and has currently has limited functionality. In the future, it is aimed to provide the functionality to read text using OCR methods and convert in braille in real-time.",
         heading2: "Details",
-        content2: "Video Demonstration: <a href='https://drive.google.com/file/d/1ywGNIakYzCpweB-FrL1TJlBqk0WQDjvO/view'>Video</a>"
+        content2: "You may go ahead and take a look at the project here: <a href='https://github.com/YashvardhanG/Realtime-Braille-Translator'>Source Code</a><br>Video Demonstration: <a href='https://drive.google.com/file/d/1ywGNIakYzCpweB-FrL1TJlBqk0WQDjvO/view'>Video</a>"
     },
 
     {
@@ -90,7 +90,7 @@ const projects = [
         heading1: "About",
         content1: "In this research, we focus on the task of toxic comment classification using tone analysis. Our goal is to develop a machine learning-based model that can accurately classify toxic comments and distinguish them from non-toxic comments. Specifically, we will explore various approaches to feature extraction, model selection, and optimization to achieve high accuracy and robustness in our classification model. We will also discuss the ethical considerations and limitations of using NLP for toxic comment classification, such as the risk of algorithmic bias and the challenges of defining what constitutes toxic language.<br><br>Overall, our research aims to contribute to the development of effective tools for detecting and combating toxic online behavior, with the ultimate goal of creating a safer and more inclusive online community. We believe that our work can make a significant impact on the field of NLP and contribute to the ongoing efforts to address the challenges of toxic online behavior.<br><br>The results of the project demonstrate the potential of NLP techniques for identifying and classifying toxic comments in various contexts. While the models developed achieved reasonable levels of accuracy, there is still room for improvement, particularly in terms of incorporating additional features and training on larger datasets.",
         heading2: "Output",
-        content2: "<img src='/assets/images/Project-Images/Fall-1.png'><br><img src='/assets/images/Project-Images/Fall-2.png'/><br><img src='/assets/images/Project-Images/Fall-3.png'/><img src='/assets/images/Project-Images/Fall-4.png'/>"
+        content2: "You may head on to <a href='https://github.com/YashvardhanG/Parkinson-Disease'>Fall Detection for Parkinson Disease</a> to explore and know more about the project. <br><br><img src='/assets/images/Project-Images/Fall-1.png'><br><img src='/assets/images/Project-Images/Fall-2.png'/><br><img src='/assets/images/Project-Images/Fall-3.png'/><img src='/assets/images/Project-Images/Fall-4.png'/>"
     },
 
     {
