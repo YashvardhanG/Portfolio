@@ -14,7 +14,7 @@ const blog = [
         id: "samsung",
         image: "/assets/images/Main-Samsung.svg",
         title: "Samsung R&D Internship",
-        byline: "Bengaluru, India | December, 2022 - Present",
+        byline: "Bengaluru, India | December, 2022 - July, 2023",
         heading1: "R&D Intern",
         content1: "Samsung PRISM | Conducted research in the field of upcoming and advancing technologies for 5+ Months (Samsung PRISM Initiative). Developed a Project using NodeJs, ExpressJs, and Meta Development Portals. Incorporated and Implemented advanced Natural Language Processing and API Gateway Models.",
         heading2: "Certification",

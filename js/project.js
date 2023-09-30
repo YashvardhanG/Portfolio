@@ -38,7 +38,7 @@ const projects = [
 
     {
         id: "pg",
-        image: "/assets/images/Main-playground.svg",
+        image: "/assets/images/Main-Playground.svg",
         title: "Playground",
         byline: "Your Minimalist Productivity Board",
         heading1: "About",
