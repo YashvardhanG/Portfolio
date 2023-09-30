@@ -37,6 +37,19 @@ const projects = [
     },
 
     {
+        id: "pg",
+        image: "/assets/images/Main-playground.svg",
+        title: "Playground",
+        byline: "Your Minimalist Productivity Board",
+        heading1: "About",
+        content1: "Welcome to Playground, the ultimate productivity notes web tool that seamlessly blends functionality with exquisite aesthetics. Created with a vision to enhance your productivity in the most visually captivating way possible, Playground is your digital haven for note-taking and organization.<br><br><b>The Art of Glassmorphism Design:</b> The design philosophy revolves around the stunning concept of 'glassmorphism,' where sleek transparency and depth create an immersive user experience. Every element of Playground is meticulously crafted to evoke a sense of elegance and sophistication.<br><br><b>Effortless Note Management:</b> With Playground, managing your notes has never been easier. You can effortlessly add, edit, and delete notes with just a few clicks. Whether it's jotting down quick ideas, creating to-do lists, or storing important information, Playground has you covered.<br><br>Stay Tuned for What's Next: I would love to hear to your feedback and implement new features and enhancements. The future of Playground is bright, and we can't wait to introduce you to a world of limitless possibilities in note-taking and creative expression. It can go beyond taking voice memos, to proper code editing playground.",
+        heading2: "Functionality",
+        content2: "Live Demo: <a href='https://yashvardhang.github.io/Playground/'>Demo</a>.<br><br>Home:<br><img src='https://user-images.githubusercontent.com/47084179/271691203-05845a71-9f26-42e3-a73a-8240e67763e6.png'><br><br>Note:<br><img src='https://user-images.githubusercontent.com/47084179/271691328-47438510-89cc-4579-a588-404850f46775.png'><br><br>List:<br><img src='https://user-images.githubusercontent.com/47084179/271691509-f4d8d17a-74d6-445d-9f29-c70976cf02f0.png'>",
+        heading3: "Source Code",
+        content3: "You may head on to <a href='https://github.com/YashvardhanG/Playground'>Source Code</a> and view the working."
+    },
+
+    {
         id: "ea",
         image: "/assets/images/Main-EA.svg",
         title: "Education Analysis",

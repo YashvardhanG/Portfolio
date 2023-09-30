@@ -17,6 +17,10 @@ const blog = [
         byline: "Bengaluru, India | December, 2022 - Present",
         heading1: "R&D Intern",
         content1: "Samsung PRISM | Conducted research in the field of upcoming and advancing technologies for 5+ Months (Samsung PRISM Initiative). Developed a Project using NodeJs, ExpressJs, and Meta Development Portals. Incorporated and Implemented advanced Natural Language Processing and API Gateway Models.",
+        heading2: "Certification",
+        content2: "Certificate: <a href = 'https://drive.google.com/file/d/1J3gqL2HGCD1BG3mcji_c9U4gx-6lKbbJ/view?usp=sharing'>Samsung R&D Internship</a>",
+        heading3: "Linkedin Post",
+        content3: "Here is a brief detail about my experience during the internship: <a href = 'https://www.linkedin.com/feed/update/urn:li:activity:7111324117072560128/'>Samsung Internship</a>"
     },
 
     {
