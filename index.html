@@ -7,8 +7,13 @@
     <meta name="description" content="Yashvardhan Gupta | 21-year-old Developer, Programmer, Designer, Guitarist; A motivated, innovative colleague and leader with a strong will to learn, develop, and acquire new skills.">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href='css/phone.css' />
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script>$(function(){$("#home_social a").attr("target","_blank");});</script>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        var homeSocialLinks = document.querySelectorAll("#home_social a");
+        homeSocialLinks.forEach(function(link) {
+          link.setAttribute("target", "_blank");
+        });
+      });
+      </script>
     <script src="/js/mode.js"></script>
     <title>Home</title>
 </head>
