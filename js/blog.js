@@ -1,13 +1,11 @@
 const blog = [
     {
-        id: "courses",
-        image: "/assets/images/Main-Certificate.svg",
-        title: "Online Courses",
-        byline: "List of Completed Courses",
+        id: "baker_hughes",
+        image: "/assets/images/Main-BH.svg",
+        title: "Baker Hughes",
+        byline: "Bengaluru, India | January, 2024 - Present",
         heading1: "About",
-        content1: "I've completed various courses dealing with an array of topics. These virtual courses are offered by highly established educational institutions and organizations. They were thorough, precise and informative.",
-        heading2: "Courses",
-        content2: "Here is the list of all completed courses:<br><br>● <a href = 'https://www.credly.com/badges/31ebfd9e-aacb-4fb3-b840-de5e7185aa03'>Security, Compliance, and Identity Fundamentals</a> - Microsoft<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/ASFB86ZUESYL'>High-Fidelity Designs and Prototypes</a> - Google<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/KL7V77N3EB5J'>AWS Cloud Technical Essentials</a> - Amazon Web Services (AWS)<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/H9PFQ2ZXLA3S'>Introduction to TensorFlow for AI, ML, and Deep Learning</a> - DeepLearning.AI<br>● <a href = 'https://www.credly.com/badges/d10c9872-78c2-4230-b577-a3179c0b1bcb/public_url'>Introduction to Packet Tracer</a> - Cisco Networking Academy<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/RYMCVM774G5A'>Interactivity with JavaScript</a> - University of Michigan<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/PPV9UM6UM4AH'>Responsive Website Basics</a> - University of London<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/FX8Q8C9UR2LU'>Data Science</a> - IBM<br>● <a href = 'https://drive.google.com/file/d/1WtvDlpeqlVKHQg7E_4LQhwBWUfKzVPdL/view?usp=sharing'>Fundamentals of Digital Marketing</a> - Google<br>● <a href = 'https://www.futurelearn.com/certificates/hnqog2o'>Introduction to Creative AI</a> - University of Arts, London<br>● <a href = 'https://www.futurelearn.com/certificates/6x4xbpg'>Computer Programming for Everyone</a> - University of Leeds<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/CEZXKS9F2MWJ'>Operating Systems</a> - Google<br>"
+        content1: "Embarking on a transformative journey as a Digital Technology Intern at Baker Hughes promises to be an exhilarating experience, providing a unique opportunity to delve into the dynamic realm of data. Over the next six months, my role will be intricately woven with the exploration and mastery of various tools and structures that underpin the digital landscape. From harnessing the power of data analytics to deciphering complex data structures, the internship at Baker Hughes is poised to be a comprehensive learning curve that will sharpen my skills and deepen my understanding of the intricate interplay between technology and industry.<br><br>As I step into this role, I am eager to absorb the wealth of knowledge that Baker Hughes, a global leader in digital technology, has to offer. The prospect of contributing to cutting-edge projects and being part of a team that pushes the boundaries of innovation is truly inspiring. Through this blog, I aim to chronicle my experiences, challenges, and victories as I navigate the multifaceted world of data within the digital technology landscape. Join me on this exciting journey as I unravel the complexities of data and leverage diverse tools to make meaningful contributions to the ever-evolving field of digital technology at Baker Hughes.",
     },
 
     {
@@ -15,8 +13,8 @@ const blog = [
         image: "/assets/images/Main-Samsung.svg",
         title: "Samsung R&D Internship",
         byline: "Bengaluru, India | December, 2022 - July, 2023",
-        heading1: "R&D Intern",
-        content1: "Samsung PRISM | Conducted research in the field of upcoming and advancing technologies for 5+ Months (Samsung PRISM Initiative). Developed a Project using NodeJs, ExpressJs, and Meta Development Portals. Incorporated and Implemented advanced Natural Language Processing and API Gateway Models.",
+        heading1: "About",
+        content1: "My tenure at Samsung PRISM has been a remarkable six-month immersion into the cutting-edge landscape of emerging technologies. My primary focus during this period has revolved around rigorous research aimed at identifying and understanding the trajectory of advancing technologies. The Samsung PRISM Initiative provided a rich environment for me to explore, analyze, and contribute to the forefront of technological innovation. One of the key highlights of my time at Samsung PRISM involved the development of a project using NodeJs and ExpressJs, seamlessly integrating Meta Development Portals to enhance functionality and user experience. This project not only served as a practical application of my technical skills but also allowed me to actively contribute to the ever-evolving tech ecosystem.<br><br>In addition to the technical intricacies of the project, I delved into the realms of advanced Natural Language Processing (NLP) and API Gateway Models. The incorporation and implementation of these sophisticated technologies underscored the forward-thinking approach of Samsung PRISM. Working on the intersection of NLP and API Gateway Models not only expanded my skill set but also provided a firsthand experience of leveraging state-of-the-art tools to address complex challenges. This immersive journey has not only equipped me with a robust technical foundation but has also instilled in me a profound appreciation for the pivotal role that research and innovation play in shaping the future of technology.",
         heading2: "Certification",
         content2: "Certificate: <a href = 'https://drive.google.com/file/d/1J3gqL2HGCD1BG3mcji_c9U4gx-6lKbbJ/view?usp=sharing'>Samsung R&D Internship</a>",
         heading3: "Linkedin Post",
@@ -29,9 +27,20 @@ const blog = [
         title: "Research Internship",
         byline: "Centre for Cyber Physical Systems, VIT Chennai | Jun, 2022 - July, 2022",
         heading1: "Patent Pending",
-        content1: "Conducted a research in the field of Internet of Things (IoT) in the Medical field. Built a prototype IoT device integrating Machine Learning for a medical application, filed for patent.<br><br>More details shall be disclosed once the patent is approved.",
+        content1: "During my enriching research internship at the Centre for Cyber Physical Systems at Vellore Institute of Technology, I immersed myself in the captivating intersection of technology and healthcare. Over the course of two months, I delved into the expansive realm of Medical Sciences, employing the transformative capabilities of Internet of Things (IoT) and Machine Learning (ML). A notable achievement during this period was the filing of a patent for an IoT-based assistive device in healthcare, showcasing the practical application of my research insights. This experience not only honed my skills in the domains of Machine Learning, IoT, and Data Science but also solidified my problem-solving prowess and aptitude for predictive analytics.<br><br>In parallel, I dedicated significant efforts to developing and deploying advanced utility-specific Machine Learning models, a task that demanded precision and innovation. The culmination of these efforts resulted in models that achieved a commendable accuracy rate exceeding 95%. This hands-on experience not only augmented my technical expertise but also deepened my understanding of the intricate interplay between hardware, research methodologies, and the evolving landscape of data analytics. The skills cultivated during this internship, ranging from machine learning to problem-solving, have equipped me with a robust foundation for tackling challenges at the forefront of cyber-physical systems and medical technology.",
         heading2: "Certification",
         content2: "<img src='/assets/images/ccps'/ alt='CCPS Certificate'>"
+    },
+
+    {
+        id: "courses",
+        image: "/assets/images/Main-Certificate.svg",
+        title: "Online Courses",
+        byline: "List of Completed Courses",
+        heading1: "About",
+        content1: "I've completed various courses dealing with an array of topics. These virtual courses are offered by highly established educational institutions and organizations. They were thorough, precise and informative.",
+        heading2: "Courses",
+        content2: "Here is the list of all completed courses:<br><br>● <a href = 'https://www.credly.com/badges/31ebfd9e-aacb-4fb3-b840-de5e7185aa03'>Security, Compliance, and Identity Fundamentals</a> - Microsoft<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/ASFB86ZUESYL'>High-Fidelity Designs and Prototypes</a> - Google<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/KL7V77N3EB5J'>AWS Cloud Technical Essentials</a> - Amazon Web Services (AWS)<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/H9PFQ2ZXLA3S'>Introduction to TensorFlow for AI, ML, and Deep Learning</a> - DeepLearning.AI<br>● <a href = 'https://www.credly.com/badges/d10c9872-78c2-4230-b577-a3179c0b1bcb/public_url'>Introduction to Packet Tracer</a> - Cisco Networking Academy<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/RYMCVM774G5A'>Interactivity with JavaScript</a> - University of Michigan<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/PPV9UM6UM4AH'>Responsive Website Basics</a> - University of London<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/FX8Q8C9UR2LU'>Data Science</a> - IBM<br>● <a href = 'https://drive.google.com/file/d/1WtvDlpeqlVKHQg7E_4LQhwBWUfKzVPdL/view?usp=sharing'>Fundamentals of Digital Marketing</a> - Google<br>● <a href = 'https://www.futurelearn.com/certificates/hnqog2o'>Introduction to Creative AI</a> - University of Arts, London<br>● <a href = 'https://www.futurelearn.com/certificates/6x4xbpg'>Computer Programming for Everyone</a> - University of Leeds<br>● <a href = 'https://www.coursera.org/account/accomplishments/verify/CEZXKS9F2MWJ'>Operating Systems</a> - Google<br>"
     },
 
     {
@@ -40,9 +49,9 @@ const blog = [
         title: "Hack Club",
         byline: "Core Committee | October 2020 - December 2022",
         heading1: "Head of Content and Media Department",
-        content1: "<b>September 2021 - December 2022</b><br>Lead a team to create and manage content, design and media. Collaborated and Implemented technical and creative projects.",
+        content1: "<b>September 2021 - December 2022</b><br>As the Head of the Content and Media Department, I undertook the dynamic responsibility of leading a proficient team dedicated to the creation and management of content, design, and media. My role extended beyond traditional leadership, involving active collaboration with team members to foster a cohesive and innovative working environment. During this tenure, I spearheaded the successful implementation of both technical and creative projects, showcasing a versatile skill set that balanced strategic thinking with hands-on project management. The experience not only sharpened my leadership acumen but also provided valuable insights into the symbiotic relationship between creativity and technology in the realm of content and media.",
         heading2: "Graphic Designer",
-        content2: "<b>October 2020 - September 2021</b><br>Worked as a Graphic Designer. Extensively involves in the designing and creative process. Worked with an array of tools to design, create and manage various aspects of social media in order to increase reach.",
+        content2: "<b>October 2020 - September 2021</b><br>During my tenure as a Graphic Designer at HackClub VIT Chennai, I played a pivotal role in the visual storytelling of the organization. My primary responsibilities centered around engaging in the entire design and creative process, utilizing a diverse set of tools to conceptualize, create, and manage visuals across various platforms. In this capacity, I actively contributed to enhancing the organization's social media presence, employing design strategies to broaden its reach and impact. This experience not only honed my graphic design skills but also deepened my understanding of the strategic role visuals play in amplifying an organization's message and fostering community engagement.",
         heading3: "Certification",
         content3: "<img src='/assets/images/hc'/ alt='HC Certificate'>"
     },
@@ -79,16 +88,32 @@ const blog = [
         heading2: "Link to Workshop",
         content2: "To catch up on the workshop, go here: <a href = 'https://www.youtube.com/watch?v=_C208vKrK5Q&t=907s'>Journey Through a Design</a> "
     },
-    
+
     {
-        id: "achieve",
-        image: "/assets/images/Main-Trophy.svg",
-        title: "Achievements",
-        byline: "Extra and Co-Curricular",
-        heading1: "Taekwon-Do",
+        id: "tkd",
+        image: "/assets/images/Main-TKD.svg",
+        title: "Taekwon-Do",
+        byline: "Black Belt : Dan-1",
+        heading1: "About",
         content1: "Enrolled in the <b>International Taekwon-Do Federation (ITF)</b> as a Black Belt and National Judge/Umpire.<br><br>● Black Belt, Dan-1. <br>● Silver Medalist - National Taekwon-Do Championship. <br>● Received the National Umpire and Judge Certification.<br>● Umpired in Taekwon-Do State, and Zonal Level Championships. <br>● Medalist in multiple Delhi State Championships",
-        heading2: "Model United Nations (MUN)",
-        content2: "Model United Nations is a simulation that imitates the procedures of the United Nations finding solutions for real-world problems, done through an academic simulation of the United Nations procedure.<br><br>● Ignite MUN 3.0 : Chairperson of the UNODC Committee<br>● Ignite MUN 2.0 : Vice-Chairperson of the ECOSOC Committee<br>● Ignite MUN 1.0 : Best Delegate<br>● Navy Children MUN : Participation<br>● MUN : Participation"
+    },
+
+    {
+        id: "mun",
+        image: "/assets/images/Main-MUN.svg",
+        title: "Model United Nations",
+        byline: "Active Member and Leader",
+        heading1: "About",
+        content1: "Model United Nations is a simulation that imitates the procedures of the United Nations finding solutions for real-world problems, done through an academic simulation of the United Nations procedure.<br><br>● Ignite MUN 3.0 : Chairperson of the UNODC Committee<br>● Ignite MUN 2.0 : Vice-Chairperson of the ECOSOC Committee<br>● Ignite MUN 1.0 : Best Delegate<br>● Navy Children MUN : Participation<br>● MUN : Participation"
+    },
+
+    {
+        id: "guitar",
+        image: "/assets/images/Main-Guitar.svg",
+        title: "Musician",
+        byline: "Contributions as Guitarist",
+        heading1: "About",
+        content1: "As a dedicated guitarist and musician, my journey has been marked by active participation, compelling performances, and numerous victories in various musical competitions. My commitment to sharing the joy of music extends beyond live performances, as evidenced by my substantial contributions to the online guitar community.<br><br> I have authored and submitted a total of six tabs on Tabs Ultimate, each garnering a remarkable rating of <b>4.5 or higher out of 5.</b> These tabs, showcasing my musical interpretation and technical proficiency, have collectively amassed an impressive <b> half a million views.</b><br><br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/misc-soundtrack/bajrangi-bhaijaan-tu-jo-mila-chords-1777959'>KK Pritam — Bajrangi Bhaijaan - Tu Jo Mila</a></b> | Views: 260,000+, Added to Favourites: 2500+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/prateek-kuhad/tum-jab-paas-chords-2172357'>Prateek Kuhad — Tum Jab Paas</a></b> | Views: 150,000+, Added to Favourites: 1700+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/agnee/aahatein-chords-1857285'>Agnee — Aahatein</a></b> | Views: 130,000+, Added to Favourites: 600+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/rhys-lewis/hold-on-to-happiness-chords-2751075'>Rhys Lewis — Hold On To Happiness</a></b> | Views: 10,000+, Added to Favourites: 600+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/ayushmann-khurrana/dil-e-nadaan-chords-1769887'>Ayushmann Khurrana — Dil-E-Nadaan</a></b> | Views: 7000+, Added to Favourites: 125+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/jonita-gandhi/gilehriyaan-chords-1927259'>Jonita Gandhi — Gilehriyaan</a></b> | Views: 10,500+, Added to Favourites: 125+"
     },
 
     {
@@ -116,7 +141,7 @@ function get()
     }
 }
 
-function details(id = "courses") 
+function details(id = "baker_hughes") 
 {
     for (const key in blog) {
         if (id == blog[key].id) {
@@ -173,7 +198,7 @@ function details(id = "courses")
     }
 }
 
-function bg(id = "courses")
+function bg(id = "baker_hughes")
 {
     document.body.style.backgroundAttachment = 'fixed';
     
@@ -262,8 +287,8 @@ function phone()
     }
 }
 
-window.addEventListener("load", bg("courses"));
-window.addEventListener("load", details("courses"));
+window.addEventListener("load", bg("baker_hughes"));
+window.addEventListener("load", details("baker_hughes"));
 window.addEventListener("load", get());
 window.addEventListener("load", phone());
 window.addEventListener("keyup", function(e) {if (e.keyCode === 39){next();}});

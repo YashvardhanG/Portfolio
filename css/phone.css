@@ -92,6 +92,7 @@ a {
 .home_left #DP{
 	height: 200px;
 	width: 200px;
+	margin-bottom: 1vh;
 }
 
 .home_social{
@@ -158,6 +159,23 @@ a {
     top: 0rem;
     position: absolute;
     right: -1.6rem;
+}
+
+.home_tagline {
+	align-self: center;
+	display: flex;
+}
+
+.home_tagline #tagline_logo {
+	height: 35px;
+	border-radius: 50px;
+}
+
+.home_tagline p {
+	margin-left: 2vw;
+	align-self: center;
+	font-weight: 300;
+	font-size: 13px;
 }
 
 .toggle {

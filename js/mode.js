@@ -63,7 +63,8 @@ function dark(filename)
         document.getElementById("Dribbble").src = "./assets/images/Dribbble-Dark.png";
         document.getElementById("projects").src = "./assets/images/Projects-Dark.svg";
         document.getElementById("blog").src = "./assets/images/Blog-Dark.svg";
-        document.getElementById("connect").src = "./assets/images/Connect-Dark.svg";
+        document.getElementById("connect").src = "./assets/images/Connect-Dark.svg"; 
+        document.getElementById("resume").src = "./assets/images/CV-Dark.svg"; 
         document.getElementById("active").style = "background: #263140;"
     }
 

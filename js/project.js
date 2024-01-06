@@ -1,5 +1,18 @@
 const projects = [
     {
+        id: "pg",
+        image: "/assets/images/Main-Playground.svg",
+        title: "Playground",
+        byline: "Your Minimalist Productivity Board",
+        heading1: "About",
+        content1: "Welcome to Playground, the ultimate productivity notes web tool that seamlessly blends functionality with exquisite aesthetics. Created with a vision to enhance your productivity in the most visually captivating way possible, Playground is your digital haven for note-taking and organization.<br><br><b>The Art of Glassmorphism Design:</b> The design philosophy revolves around the stunning concept of 'glassmorphism,' where sleek transparency and depth create an immersive user experience. Every element of Playground is meticulously crafted to evoke a sense of elegance and sophistication.<br><br><b>Effortless Note Management:</b> With Playground, managing your notes has never been easier. You can effortlessly add, edit, and delete notes with just a few clicks. Whether it's jotting down quick ideas, creating to-do lists, or storing important information, Playground has you covered.<br><br>Stay Tuned for What's Next: I would love to hear to your feedback and implement new features and enhancements. The future of Playground is bright, and we can't wait to introduce you to a world of limitless possibilities in note-taking and creative expression. It can go beyond taking voice memos, to proper code editing playground.",
+        heading2: "Functionality",
+        content2: "Live Demo: <a href='https://yashvardhang.github.io/Playground/'>Demo</a>.<br><br>Home:<br><img src='https://user-images.githubusercontent.com/47084179/271691203-05845a71-9f26-42e3-a73a-8240e67763e6.png'><br><br>Note:<br><img src='https://user-images.githubusercontent.com/47084179/271691328-47438510-89cc-4579-a588-404850f46775.png'><br><br>List:<br><img src='https://user-images.githubusercontent.com/47084179/271691509-f4d8d17a-74d6-445d-9f29-c70976cf02f0.png'>",
+        heading3: "Source Code",
+        content3: "You may head on to <a href='https://github.com/YashvardhanG/Playground'>Source Code</a> and view the working."
+    },
+
+    {
         id: "cynthia",
         image: "/assets/images/Main-Cynthia.svg",
         title: "Cynthia",
@@ -34,19 +47,6 @@ const projects = [
         content2: "This project consists of various examples of Convolutional Neural Networks developed using Tensorflow which is integrated with the Python programming language. Since Tensorflow has been integrated with the Python programming language, it requires some modules to operate. <br><br>You may explore the working of a Convolutional Neural Network <a href = 'https://towardsdatascience.com/convolutional-neural-network-17fb77e76c05#:~:text=Fully%20Connected%20Layer%20is%20simply,into%20the%20fully%20connected%20layer.'>Here</a>.",
         heading3: "Source Code",
         content3: "You may head on to <a href='https://github.com/YashvardhanG/CNN'>Source Code</a> and view all the CNN models developed."
-    },
-
-    {
-        id: "pg",
-        image: "/assets/images/Main-Playground.svg",
-        title: "Playground",
-        byline: "Your Minimalist Productivity Board",
-        heading1: "About",
-        content1: "Welcome to Playground, the ultimate productivity notes web tool that seamlessly blends functionality with exquisite aesthetics. Created with a vision to enhance your productivity in the most visually captivating way possible, Playground is your digital haven for note-taking and organization.<br><br><b>The Art of Glassmorphism Design:</b> The design philosophy revolves around the stunning concept of 'glassmorphism,' where sleek transparency and depth create an immersive user experience. Every element of Playground is meticulously crafted to evoke a sense of elegance and sophistication.<br><br><b>Effortless Note Management:</b> With Playground, managing your notes has never been easier. You can effortlessly add, edit, and delete notes with just a few clicks. Whether it's jotting down quick ideas, creating to-do lists, or storing important information, Playground has you covered.<br><br>Stay Tuned for What's Next: I would love to hear to your feedback and implement new features and enhancements. The future of Playground is bright, and we can't wait to introduce you to a world of limitless possibilities in note-taking and creative expression. It can go beyond taking voice memos, to proper code editing playground.",
-        heading2: "Functionality",
-        content2: "Live Demo: <a href='https://yashvardhang.github.io/Playground/'>Demo</a>.<br><br>Home:<br><img src='https://user-images.githubusercontent.com/47084179/271691203-05845a71-9f26-42e3-a73a-8240e67763e6.png'><br><br>Note:<br><img src='https://user-images.githubusercontent.com/47084179/271691328-47438510-89cc-4579-a588-404850f46775.png'><br><br>List:<br><img src='https://user-images.githubusercontent.com/47084179/271691509-f4d8d17a-74d6-445d-9f29-c70976cf02f0.png'>",
-        heading3: "Source Code",
-        content3: "You may head on to <a href='https://github.com/YashvardhanG/Playground'>Source Code</a> and view the working."
     },
 
     {
@@ -345,7 +345,7 @@ function get()
     }
 }
 
-function details(id = "cynthia") 
+function details(id = "pg") 
 {
     for (const key in projects) {
         if (id == projects[key].id) {
@@ -402,7 +402,7 @@ function details(id = "cynthia")
     }
 }
 
-function bg(id = "cynthia")
+function bg(id = "pg")
 {
     document.body.style.backgroundAttachment = 'fixed';
     
@@ -492,8 +492,8 @@ function phone()
     }
 }
 
-window.addEventListener("load", bg("cynthia"));
-window.addEventListener("load", details("cynthia"));
+window.addEventListener("load", bg("pg"));
+window.addEventListener("load", details("pg"));
 window.addEventListener("load", get());
 window.addEventListener("load", phone());
 window.addEventListener("keyup", function(e) {if (e.keyCode === 39){next();}});

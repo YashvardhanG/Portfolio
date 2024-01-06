@@ -81,11 +81,13 @@ a {
 	height: 400px;
 	width: 400px;
 	justify-content: center;
+	margin-left: 1vw;
+	margin-bottom: 2vh;
 }
 
 .home_social{
 	align-self: center flex-end;
-	margin-top: 5vh;
+	margin-top: 3vh;
 }
 
 .home_social ul {
@@ -160,6 +162,23 @@ a {
 	align-self: flex-end;
 	margin-top: 2vh;
 	margin-right: 2vh;
+}
+
+.home_tagline {
+	align-self: center;
+	display: flex;
+}
+
+.home_tagline #tagline_logo {
+	height: 35px;
+	border-radius: 50px;
+}
+
+.home_tagline p {
+	margin-left: 0.5vw;
+	align-self: center;
+	font-weight: 400;
+	font-size: 14.5px;
 }
 
 /* TOGGLE BUTTON */
@@ -524,7 +543,7 @@ button #menu {
 	right: 0px;
 	top: 0px;
 	margin-right: 3vw;
-	margin-top: 19vh;
+	margin-top: 18vh;
 	font-weight: 600;
 }
 
