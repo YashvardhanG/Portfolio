@@ -33,6 +33,17 @@ const blog = [
     },
 
     {
+        id: "vit",
+        image: "/assets/images/Main-CCPS.svg",
+        title: "Vellore Institute of Technology, Chennai",
+        byline: "B.Tech - Computer Science and Engineering | Sep, 2020 - July, 2024",
+        heading1: "About",
+        content1: "<b>CGPA: 9.11</b><br><br>Currently pursuing my Bachelor of Technology in Computer Science at Vellore Institute of Technology Chennai (VITC), I've achieved a noteworthy CGPA of 9.11, showcasing my commitment to academic excellence. Beyond the classroom, I actively contributed to the tech community as a core committee member of Hack Club, fostering innovation and collaboration. Additionally, my role as a Student Coordinator at TechnoVIT honed my organizational and leadership skills, contributing to the success of student-driven initiatives.<br><br>Graduating in 2024, my journey has equipped me with a robust skill set, encompassing leadership, effective communication, and technical proficiency in Machine Learning, NLP, IoT, Data Science, and AI. The curriculum, coupled with hands-on experiences in microprocessors and problem-solving, has shaped me academically and enhanced my interpersonal relationships and management skills. This encapsulates the impactful statements and facts of my academic and extracurricular endeavors, showcasing a well-rounded professional prepared for the dynamic landscape of computer sciences.",
+        heading2: "Relevant Coursework",
+        content2: "• Programming Languages: Python, C, C++, Java, JavaScript, HTML, CSS, ReactJS, NodeJS and R.<br>• Database and Backend: PL/SQL, NoSQL and PHP.<br>• Analysis of Data Structures and Algorithms<br>• Artificial Intelligence and Natural Language Processing<br>• Software Engineering<br>• Data Visualization and Analysis <br>• Information Security Analysis and Audit<br>• Internet of Things (IoT)<br>• Operating Systems and Network Systems<br>• Digital Logic and Design: Hardware and System functionality.<br>• Introduction to Quantitative, Logical and Verbal Ability<br>• Ethics and Values"
+    },
+
+    {
         id: "courses",
         image: "/assets/images/Main-Certificate.svg",
         title: "Online Courses",
@@ -71,7 +82,7 @@ const blog = [
         id: "technovit",
         image: "/assets/images/Main-Technovit.svg",
         title: "TechnoVIT",
-        byline: "Core Committee | September, 2022",
+        byline: "Overall Coordinator | September, 2022",
         heading1: "About",
         content1: "This is the 6th Edition of technoVIT, an international level technical festival of VIT Chennai.It gives us immense pride and pleasure in presenting technoVIT' 22. This technical extravaganza will be filled with numerous activities such as workshops and technical events organised by the various schools of the University with the primary objective being, 'nurture professional skills and impart fine qualities to the students'. It also has gaming events to thrill and create an environment with fun and frolic. Additionally, technical exhibitions from various organisations are being hosted. We, at VIT Chennai promise the audience an atmosphere of immense joy leaving them the thirst for more.",
         heading2: "Roles and Responsibilities",
@@ -110,7 +121,7 @@ const blog = [
     {
         id: "guitar",
         image: "/assets/images/Main-Guitar.svg",
-        title: "Musician",
+        title: "Music",
         byline: "Contributions as Guitarist",
         heading1: "About",
         content1: "As a dedicated guitarist and musician, my journey has been marked by active participation, compelling performances, and numerous victories in various musical competitions. My commitment to sharing the joy of music extends beyond live performances, as evidenced by my substantial contributions to the online guitar community.<br><br> I have authored and submitted a total of six tabs on Tabs Ultimate, each garnering a remarkable rating of <b>4.5 or higher out of 5.</b> These tabs, showcasing my musical interpretation and technical proficiency, have collectively amassed an impressive <b> half a million views.</b><br><br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/misc-soundtrack/bajrangi-bhaijaan-tu-jo-mila-chords-1777959'>KK Pritam — Bajrangi Bhaijaan - Tu Jo Mila</a></b> | Views: 260,000+, Added to Favourites: 2500+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/prateek-kuhad/tum-jab-paas-chords-2172357'>Prateek Kuhad — Tum Jab Paas</a></b> | Views: 150,000+, Added to Favourites: 1700+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/agnee/aahatein-chords-1857285'>Agnee — Aahatein</a></b> | Views: 130,000+, Added to Favourites: 600+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/rhys-lewis/hold-on-to-happiness-chords-2751075'>Rhys Lewis — Hold On To Happiness</a></b> | Views: 10,000+, Added to Favourites: 600+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/ayushmann-khurrana/dil-e-nadaan-chords-1769887'>Ayushmann Khurrana — Dil-E-Nadaan</a></b> | Views: 7000+, Added to Favourites: 125+<br>● <b><a href = 'https://tabs.ultimate-guitar.com/tab/jonita-gandhi/gilehriyaan-chords-1927259'>Jonita Gandhi — Gilehriyaan</a></b> | Views: 10,500+, Added to Favourites: 125+"
@@ -287,8 +298,26 @@ function phone()
     }
 }
 
-window.addEventListener("load", bg("baker_hughes"));
-window.addEventListener("load", details("baker_hughes"));
+function map()
+{
+    var currentUrl = window.location.href;
+    if (currentUrl.includes("#")) 
+    {
+        var mapped = currentUrl.split("#")[1];
+        bg(mapped);
+        details(mapped);
+    } 
+    
+    else 
+    {
+        bg("baker_hughes");
+        details("baker_hughes");   
+    }
+}
+
+window.addEventListener("load", map());
+// window.addEventListener("load", bg("baker_hughes"));
+// window.addEventListener("load", details("baker_hughes"));
 window.addEventListener("load", get());
 window.addEventListener("load", phone());
 window.addEventListener("keyup", function(e) {if (e.keyCode === 39){next();}});

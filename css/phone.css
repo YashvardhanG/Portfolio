@@ -459,6 +459,7 @@ button#menu {
 	margin-top: 1vh;
 	font-weight: 900;
     font-size: 25px;
+	text-align: center;
 }
 
 .project-detail h3 {
@@ -468,6 +469,7 @@ button#menu {
 	font-weight: 300;
 	font-size: 18px;
 	padding-bottom: 6vh;
+	text-align: center;
 }
 
 .project-detail h2 {
